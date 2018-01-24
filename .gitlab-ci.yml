@@ -4,7 +4,7 @@ image: newcity/builder:latest
 before_script:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$GITHUB_PRIVATE_KEY")
-  - make .ci_init
+  - make init
 
 stages:
   - build
