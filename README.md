@@ -1,0 +1,1 @@
+Composer-based scaffolding for Pantheon.
