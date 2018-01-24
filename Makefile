@@ -13,6 +13,8 @@ install:
 
 clone:
 	git clone $(REMOTE_REPO) $(BUILD_REPO)
+	git config --global user.email "geeks@insidenewcity.com"
+	git config --global user.name "CI Bot"
 
 replay:
 	rsync -av . $(BUILD_REPO)
