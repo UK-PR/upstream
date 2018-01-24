@@ -1,4 +1,4 @@
-COMMIT_MESSAGE=$(shell echo git log -1 --pretty=%B | cat | tr -d "\'" )
+COMMIT_MESSAGE=BUILD: $(shell git log -1 --pretty=%B | cat | tr -d "\'")
 REMOTE_REPO=git@github.com:ahebrank/test-upstream.git
 BUILD_REPO=/tmp/upstream
 
