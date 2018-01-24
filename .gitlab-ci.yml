@@ -6,18 +6,9 @@ before_script:
   - ssh-add <(echo "$GITHUB_PRIVATE_KEY")
   - make init
 
-stages:
-  - build
-  - deploy
-
-composer:
-  stage: build
+push:master:
   script:
     - make install
-
-push:master:
-  stage: deploy
-  script:
     - make clone
     - make replay
     - make push
