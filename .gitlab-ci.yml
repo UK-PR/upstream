@@ -1,10 +1,6 @@
 ---
 image: newcity/builder:latest
 
-variables:
-  REMOTE_REPO: "git@github.com:ahebrank/test-upstream.git"
-  BUILD_REPO: "/tmp/upstream"
-  
 before_script:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$GITHUB_PRIVATE_KEY")
@@ -12,17 +8,18 @@ before_script:
 
 stages:
   - build
-  - push
+  - deploy
 
-build:
+composer:
+  stage: build
   script:
-    - composer build-assets
+    - make install
+
+push:master:
+  stage: deploy
+  script:
+    - make clone
+    - make replay
+    - make push
   only:
     - master
-
-push:
-  script:
-    - export COMMIT_MESSAGE="$( echo git log -1 --pretty=%B | cat | tr -d \"\'\" )"
-    - git clone $(REMOTE_REPO) $(BUILD_REPO)
-    - rsync -av . $(BUILD_REPO)/
-    - cd $(BUILD_REPO) && git add . && git commit -m "BUILD: $(COMMIT_MESSAGE)" && git push origin master
