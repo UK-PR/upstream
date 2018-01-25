@@ -20,4 +20,4 @@ replay:
 	rsync -av --exclude .git . $(BUILD_REPO)
 
 push:
-	cd $(BUILD_REPO) && git add . && git commit -m "BUILD: $(COMMIT_MESSAGE)" && git push origin master
+	cd $(BUILD_REPO) && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master

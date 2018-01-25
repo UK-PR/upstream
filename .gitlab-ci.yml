@@ -3,7 +3,7 @@ image: newcity/builder:latest
 
 before_script:
   - eval $(ssh-agent -s)
-  - ssh-add <(echo "$GITHUB_PRIVATE_KEY")
+  - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
   - make init
 
 push:master:

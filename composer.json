@@ -16,7 +16,8 @@
     "drupal/core": "~8",
     "drupal/console": "~1",
     "drush/drush": "~8",
-    "webflo/drupal-core-strict": "8.4.4"
+    "webflo/drupal-core-strict": "8.4.4",
+    "drupal/config_installer": "^1.0"
   },
   "require-dev": {
     "behat/mink": "~1.7",
@@ -80,6 +81,11 @@
         ".eslintrc.json",
         ".htaccess",
         "web.config"
+      ]
+    },
+    "build-env": {
+      "install-cms": [
+        "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes"
       ]
     },
     "config": {
