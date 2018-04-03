@@ -21,5 +21,5 @@ replay:
 	rsync -rlD --delete --exclude .git --exclude config --exclude custom-modules --exclude settings.php . $(BUILD_REPO)
 	rsync -rlD config/ $(BUILD_REPO)/web/sites/default/config
 	rsync settings.php $(BUILD_REPO)/web/sites/default/
-	rsync -rlD custom-modules $(BUILD_REPO)/web/modules/custom
+	rsync -rlD custom-modules/ $(BUILD_REPO)/web/modules/custom
 	cd $(BUILD_REPO) && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master
