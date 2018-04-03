@@ -19,8 +19,9 @@ clone:
 
 replay:
 	rm Makefile .gitlab-ci.yml .ci_ssh_config .braids.json
-	rsync -rlDv --exclude .git --exclude install-config --exclude custom-modules --exclude default-settings . $(BUILD_REPO)
+	rsync -rlDv --exclude .git --exclude install-config --exclude custom-modules --exclude default-settings --exclude misc-content . $(BUILD_REPO)
 	rsync -rlDv install-config/ $(BUILD_REPO)/web/sites/default/config
 	rsync -rdDv default-settings/ $(BUILD_REPO)/web/sites/default/
 	rsync -rlDv custom-modules/ $(BUILD_REPO)/web/modules/custom
+	rsync -rlDv misc-content/embed_buttons/ $(BUILD_REPO)/web/sites/default/files/embed_buttons
 	cd $(BUILD_REPO) && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master
