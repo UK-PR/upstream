@@ -1,9 +1,4 @@
 {
-  "custom-modules/ukd8_customizations": {
-    "url": "git@github.com:uk-d8/ukd8_customizations.git",
-    "branch": "master",
-    "revision": "ed36a65c5ef0b1a15c551093da8692c04b46073c"
-  },
   "install-config": {
     "url": "git@gitlab.com:newcity/uk-d8/install-config.git",
     "branch": "master",
