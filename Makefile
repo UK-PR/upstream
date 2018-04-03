@@ -17,8 +17,8 @@ clone:
 	git config --global user.name "CI Bot"
 
 replay:
-	rm Makefile .gitlab-ci.yml .ci_ssh_config
-	rsync -rlD --delete --exclude .git --exclude config --exclude custom-modules --exclude settings.php . $(BUILD_REPO)
+	rm Makefile .gitlab-ci.yml .ci_ssh_config .braids.json
+	rsync -rlD --exclude .git --exclude config --exclude custom-modules --exclude settings.php . $(BUILD_REPO)
 	rsync -rlD config/ $(BUILD_REPO)/web/sites/default/config
 	rsync settings.php $(BUILD_REPO)/web/sites/default/
 	rsync -rlD custom-modules/ $(BUILD_REPO)/web/modules/custom
