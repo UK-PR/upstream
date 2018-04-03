@@ -1,0 +1,22 @@
+uuid: 768f2c14-0d7e-47e0-a49e-e546fca75a7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ukd8
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: ukd8_breadcrumbs
+theme: ukd8
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

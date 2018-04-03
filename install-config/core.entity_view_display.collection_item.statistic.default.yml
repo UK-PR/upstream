@@ -1,0 +1,38 @@
+uuid: d09c5c30-2432-4bfd-98fe-f5320e547ffb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.statistic
+    - field.field.collection_item.statistic.field_label_above
+    - field.field.collection_item.statistic.field_label_below
+  module:
+    - text
+id: collection_item.statistic.default
+targetEntityType: collection_item
+bundle: statistic
+mode: default
+content:
+  field_label_above:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_label_below:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

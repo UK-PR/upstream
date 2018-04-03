@@ -1,0 +1,44 @@
+uuid: 3d48dbb4-4854-425a-9339-f087b704949f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.statistic
+    - field.field.collection_item.statistic.field_label_above
+    - field.field.collection_item.statistic.field_label_below
+  module:
+    - entity_reference_widget_helpers
+    - text
+id: collection_item.statistic.default
+targetEntityType: collection_item
+bundle: statistic
+mode: default
+content:
+  field_label_above:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_label_below:
+    weight: 2
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      entity_reference_widget_helpers:
+        eck_title_label_override: Statistic
+        eck_title_description_override: 'Number-like phrase (serves as title for this item)'
+hidden: {  }

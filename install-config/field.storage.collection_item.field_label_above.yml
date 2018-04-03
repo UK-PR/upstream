@@ -1,0 +1,20 @@
+uuid: b5d73c24-ef0c-48c0-9b44-ae7f0a5c2e4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: collection_item.field_label_above
+field_name: field_label_above
+entity_type: collection_item
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,14 +1,12 @@
-uuid: facd9952-1d7a-41e7-90e3-052089cc33cf
+uuid: ecf2b9c8-1db7-40b5-95aa-f79052a1c0e5
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.full_html
+    - filter.format.restricted_html
   module:
     - ckeditor
-_core:
-  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
-format: full_html
+format: restricted_html
 editor: ckeditor
 settings:
   toolbar:
@@ -19,13 +17,10 @@ settings:
           items:
             - Bold
             - Italic
-            - Strike
-            - Superscript
-            - Subscript
-            - '-'
-            - RemoveFormat
+            - Styles
+            - Format
         -
-          name: Linking
+          name: Links
           items:
             - DrupalLink
             - DrupalUnlink
@@ -38,26 +33,23 @@ settings:
           name: Media
           items:
             - Blockquote
-            - DrupalImage
-            - Table
-            - HorizontalRule
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
         -
           name: Tools
           items:
-            - ShowBlocks
             - Source
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

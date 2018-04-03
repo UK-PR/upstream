@@ -7,6 +7,6 @@
   "install-config": {
     "url": "git@gitlab.com:newcity/uk-d8/install-config.git",
     "branch": "master",
-    "revision": "4c5bbfb57ff1803c6b67a2f68efb4be2442ab521"
+    "revision": "a053119ad31a5e4d4106304ddaa9934b7fb4d7b1"
   }
 }
