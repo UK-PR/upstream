@@ -162,6 +162,11 @@
       "optimize-autoloader": true,
       "preferred-install": "dist",
       "sort-packages": true
+    },
+    "patches": {
+      "drupal/config_installer": {
+        "8.5 empty field fix": "https://www.drupal.org/files/issues/2018-03-10/2951712-8.patch"
+      }
     }
   }
 }

@@ -17,7 +17,8 @@ clone:
 	git config --global user.name "CI Bot"
 
 replay:
-	rsync -av --delete --exclude .git --exclude Maefile --exclude .gitlab-ci.yml --exclude .ci_ssh_config . $(BUILD_REPO)
+	rm Makefile .gitlab-ci.yml .ci_ssh_config
+	rsync -av --exclude .git . $(BUILD_REPO)
 
 push:
 	cd $(BUILD_REPO) && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master
