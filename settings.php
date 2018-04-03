@@ -27,6 +27,11 @@ if ($is_installer_url) {
 }
 
 /**
+ * use configuration installer profile
+ */
+$settings['install_profile'] = 'config_installer'; 
+
+/**
  * If there is a local settings file, then include it
  */
 $local_settings = __DIR__ . "/settings.local.php";
