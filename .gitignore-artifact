@@ -4,7 +4,7 @@
 
 # Ignore Drupal's file directory
 web/sites/default/files
-!web/sites/default/files/embed_buttons/*
+!web/sites/default/files/embed_buttons/*.png
 
 # Pantheon commits a settings.php for environment-specific settings.
 # Place local settings in settings.local.php
