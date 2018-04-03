@@ -1,0 +1,10 @@
+uuid: 2a9ca94d-419c-4a38-9a35-9820a5b2f6ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - embederator
+id: embederator.token
+label: Token
+targetEntityType: embederator
+cache: true

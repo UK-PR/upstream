@@ -158,7 +158,7 @@
     },
     "build-env": {
       "install-cms": [
-        "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes"
+        "site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=sites/default/files/config --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes"
       ]
     },
     "config": {
