@@ -18,7 +18,7 @@ clone:
 
 replay:
 	rm Makefile .gitlab-ci.yml .ci_ssh_config
-	rsync -rlD --exclude .git --exclude config . $(BUILD_REPO)
-	rsync -rlD config $(BUILD_REPO)/web/sites/default/config
-	rsync settings.local.php $(BUILD_REPO)/web/sites/default/
+	rsync -rlD --delete --exclude .git --exclude config . $(BUILD_REPO)
+	rsync -rlD config/ $(BUILD_REPO)/web/sites/default/config
+	rsync settings.php $(BUILD_REPO)/web/sites/default/
 	cd $(BUILD_REPO) && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master
