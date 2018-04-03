@@ -1,9 +1,4 @@
 {
-  "custom-modules": {
-    "url": "git@gitlab.com:newcity/uk-d8/custom-modules.git",
-    "branch": "master",
-    "revision": "c459d55ab70c9f819f7d608b06abaca34cea6ee0"
-  },
   "install-config": {
     "url": "git@gitlab.com:newcity/uk-d8/install-config.git",
     "branch": "master",
