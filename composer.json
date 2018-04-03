@@ -146,7 +146,8 @@
       "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8/{version}/{path}",
       "includes": [
         "sites/default/default.services.pantheon.preproduction.yml",
-        "sites/default/settings.pantheon.php"
+        "sites/default/settings.pantheon.php",
+        "sites/default/settings.php"
       ],
       "excludes": [
         ".csslintrc",
@@ -155,11 +156,6 @@
         ".eslintrc.json",
         ".htaccess",
         "web.config"
-      ]
-    },
-    "build-env": {
-      "install-cms": [
-        "site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=sites/default/files/config --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes"
       ]
     },
     "config": {
