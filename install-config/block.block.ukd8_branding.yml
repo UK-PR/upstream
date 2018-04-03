@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_visibility_groups
     - system
   theme:
     - ukd8
@@ -11,7 +12,7 @@ _core:
 id: ukd8_branding
 theme: ukd8
 region: header_logo
-weight: 0
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:
@@ -20,6 +21,11 @@ settings:
   provider: system
   label_display: '0'
   use_site_logo: true
-  use_site_name: true
-  use_site_slogan: true
-visibility: {  }
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

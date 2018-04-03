@@ -12,8 +12,8 @@ _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
 id: ukd8_account_menu
 theme: ukd8
-region: header_logo
-weight: 0
+region: content_prefix
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:
