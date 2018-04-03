@@ -11,6 +11,5 @@ push:master:
     - make install
     - make clone
     - make replay
-    - make push
   only:
     - master
