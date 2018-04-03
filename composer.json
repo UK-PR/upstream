@@ -15,7 +15,7 @@
         "version": "4.2.1",
         "type": "drupal-library",
         "dist": {
-          "url": "https://github.com/desandro/masonry/archive/v3.3.1.zip",
+          "url": "https://github.com/desandro/masonry/archive/v4.2.1.zip",
           "type": "zip"
         }
       }
@@ -27,7 +27,7 @@
         "version": "4.1.4",
         "type": "drupal-library",
         "dist": {
-          "url": "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip",
+          "url": "https://github.com/desandro/imagesloaded/archive/v4.1.4.zip",
           "type": "zip"
         }
       }
@@ -38,10 +38,9 @@
         "name": "enyo/dropzone",
         "version": "5.1.1",
         "type": "drupal-library",
-        "source": {
-          "url": "https://github.com/enyo/dropzone",
-          "type": "git",
-          "reference": "origin/master"
+        "dist": {
+          "url": "https://github.com/enyo/dropzone/archive/v5.1.1.zip",
+          "type": "zip"
         }
       }
     }
