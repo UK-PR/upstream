@@ -1,0 +1,15 @@
+{
+  "name": "ava-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ava": "^1.0.0-beta.3",
+    "fs": "^0.0.1-security",
+    "puppeteer": "^1.2.0",
+    "random-words": "^1.0.0"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
