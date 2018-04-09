@@ -23,7 +23,7 @@ replay:
 	rsync -rlDv install-config/ $(BUILD_REPO)/web/sites/default/config
 	rsync -rdDv default-settings/ $(BUILD_REPO)/web/sites/default/
 	rsync -rlDv misc-content/embed_buttons/ $(BUILD_REPO)/web/sites/default/files/embed_buttons
-	mv $(BUILD_REPO) app
+	mv $(BUILD_REPO) build
 
 push:
 	cd app && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master

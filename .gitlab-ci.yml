@@ -1,7 +1,13 @@
 ---
 image: newcity/builder:latest
 
+stages:
+  - build
+  - test
+  - deploy
+
 build:
+  stage: build
   script:
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
@@ -11,11 +17,14 @@ build:
     - make replay
   artifacts:
     paths:
-      - app
+      - build
 
 test:
+  stage: test
   image: newcity/lamp-testing-drupal
   script:
+    - cd /
+    - mv app/build /app
     - ./startup.sh
     - cd test
     - mkdir data
@@ -24,6 +33,7 @@ test:
     - ava create-nodes.js
   
 push:master:
+  stage: deploy
   script:
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
