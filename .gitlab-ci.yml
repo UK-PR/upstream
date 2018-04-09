@@ -1,15 +1,33 @@
 ---
 image: newcity/builder:latest
 
-before_script:
-  - eval $(ssh-agent -s)
-  - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
-  - make init
-
-push:master:
+build:
   script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
+    - make init
     - make install
     - make clone
     - make replay
+  artifacts:
+    paths:
+      - app
+
+test:
+  image: newcity/lamp-testing-drupal
+  script:
+    - ./startup.sh
+    - cd test
+    - mkdir data
+    - npm install --ignore-scripts
+    - ava login.js
+    - ava create-nodes.js
+  
+push:master:
+  script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
+    - make init
+    - make push
   only:
     - master

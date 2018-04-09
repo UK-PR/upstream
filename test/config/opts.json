@@ -1,0 +1,7 @@
+{
+    "headless": true,
+    "slowMo": 100,
+    "timeout": 10000,
+    "executablePath": "/usr/bin/google-chrome",
+    "args": ["--disable-gpu", "--disable-dev-shm-usage"]
+}
