@@ -23,6 +23,7 @@ test:
   stage: test
   image: newcity/lamp-testing-drupal
   script:
+    - pwd
     - cd /
     - mv app/build /app
     - ./startup.sh
