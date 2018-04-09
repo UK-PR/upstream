@@ -24,7 +24,7 @@ test:
   image: newcity/lamp-testing-drupal
   script:
     - cd /
-    - mv $CI_PROJECT_DIR/build /app
+    - mv $CI_PROJECT_DIR/build/* /app/
     - ./startup.sh
     - cd test
     - mkdir data
