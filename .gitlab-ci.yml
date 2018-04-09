@@ -28,7 +28,7 @@ test:
     - ./startup.sh
     - cd $CI_PROJECT_DIR/test
     - mkdir data
-    - npm install --ignore-scripts
+    - npm install
     - cd scripts
     - ava login.js
     - ava create-nodes.js
