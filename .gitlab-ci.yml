@@ -28,6 +28,7 @@ test:
     - ./startup.sh
     - cd /test
     - ls
+    - npm install puppeteer
     - mkdir data
     - mv $CI_PROJECT_DIR/test-scripts scripts
     - cd scripts
