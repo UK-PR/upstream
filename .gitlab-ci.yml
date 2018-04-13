@@ -26,8 +26,9 @@ test:
     - cd /
     - mv $CI_PROJECT_DIR/build/* /app/
     - ./startup.sh
-    - cd $CI_PROJECT_DIR/test
+    - cd /test
     - mkdir data
+    - mv $CI_PROJECT_DIR/test-scripts scripts
     - cd scripts
     - ava login.js
     - ava create-nodes.js
