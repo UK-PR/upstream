@@ -43,5 +43,5 @@ test.serial('list content types', async t => {
 
     t.true(add_node_urls.length > 0);
 
-    fs.writeFileSync('data/add-node-urls.json', JSON.stringify(add_node_urls));
+    fs.writeFileSync('../data/add-node-urls.json', JSON.stringify(add_node_urls));
 });

@@ -27,6 +27,7 @@ test:
     - mv $CI_PROJECT_DIR/build/* /app/
     - ./startup.sh
     - cd /test
+    - ls
     - mkdir data
     - mv $CI_PROJECT_DIR/test-scripts scripts
     - cd scripts
