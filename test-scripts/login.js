@@ -20,7 +20,7 @@ test.serial('homepage loads', async t => {
 });
 
 test.serial('login', async t => {
-    await page.goto(site.homepage + '/user');
+    await page.goto('http://localhost/user');
 
     await page.type('[name="name"]', 'admin');
     await page.type('[name="pass"]', 'admin');
@@ -34,7 +34,7 @@ test.serial('login', async t => {
 });
 
 test.serial('list content types', async t => {
-    await page.goto(site.homepage + '/node/add');
+    await page.goto('http://localhost/node/add');
 
     const add_node_urls = await page.evaluate(() => {
       const anchors = document.querySelectorAll('.admin-list a');

@@ -10,7 +10,7 @@ test.before(async t => {
   browser = await puppeteer.launch(opts);
   page = await browser.newPage();
 
-  await page.goto(site.homepage + '/user');
+  await page.goto('http://localhost/user');
   await page.type('[name="name"]', 'admin');
   await page.type('[name="pass"]', 'admin');
   await page.click('#edit-submit');
