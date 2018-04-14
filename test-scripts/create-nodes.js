@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 import test from 'ava';
-import node_urls from '../data/add-node-urls.json';
-import opts from '../config/opts.json'
+import node_urls from '/test/data/add-node-urls.json';
+import opts from '/test/config/opts.json'
 import randomWords from 'random-words';
 
 let browser, page;

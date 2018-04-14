@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 import test from 'ava';
 import fs from 'fs';
-import opts from '../config/opts.json'
+import opts from '/test/config/opts.json'
 
 let browser, page;
 
@@ -43,5 +43,5 @@ test.serial('list content types', async t => {
 
     t.true(add_node_urls.length > 0);
 
-    fs.writeFileSync('../data/add-node-urls.json', JSON.stringify(add_node_urls));
+    fs.writeFileSync('/test/data/add-node-urls.json', JSON.stringify(add_node_urls));
 });
