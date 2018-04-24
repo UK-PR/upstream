@@ -3,18 +3,20 @@ REMOTE_REPO=git@github.com:uk-d8/upstream.git
 BUILD_REPO=/tmp/upstream
 
 init:
+	eval $(shell ssh-agent -s)
+    @ssh-add <(echo "$(GITHUB_UPSTREAM_PRIVATE_KEY)")
 	test -d /root/.ssh || mkdir /root/.ssh
 	chmod 700 /root/.ssh
 	cp .ci_ssh_config /root/.ssh/config
 	chmod 600 /root/.ssh/config
+	git config --global user.email "geeks@insidenewcity.com"
+	git config --global user.name "CI Bot"
 
 install:
 	composer build-assets
 
-clone:
+clone: init
 	git clone $(REMOTE_REPO) $(BUILD_REPO)
-	git config --global user.email "geeks@insidenewcity.com"
-	git config --global user.name "CI Bot"
 	cd $(BUILD_REPO) && rm -rf *
 
 replay:
@@ -25,5 +27,5 @@ replay:
 	rsync -rlDv misc-content/embed_buttons/ $(BUILD_REPO)/web/sites/default/files/embed_buttons
 	mv $(BUILD_REPO) build
 
-push:
+push: init
 	cd build && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master
