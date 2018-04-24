@@ -30,7 +30,7 @@ test:
     - mv $CI_PROJECT_DIR/test-scripts scripts
     - cd scripts
     - ava login.js
-    - ava create-nodes.js
+    # - ava create-nodes.js
   
 push:master:
   stage: deploy
