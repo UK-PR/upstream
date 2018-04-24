@@ -4,7 +4,7 @@ BUILD_REPO=/tmp/upstream
 
 init:
 	eval $(shell ssh-agent -s)
-    @ssh-add <(echo "$(GITHUB_UPSTREAM_PRIVATE_KEY)")
+	@ssh-add <(echo "$(GITHUB_UPSTREAM_PRIVATE_KEY)")
 	test -d /root/.ssh || mkdir /root/.ssh
 	chmod 700 /root/.ssh
 	cp .ci_ssh_config /root/.ssh/config
