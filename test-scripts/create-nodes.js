@@ -28,20 +28,24 @@ node_urls.forEach(url => {
 
     const titleEl = await page.evaluate(() => document.querySelector('[name="title[0][value]"]'));
     if (titleEl !== null) {
-      await page.type('[name="title[0][value]"]', 'Test Node');
+      await page.type('[name="title[0][value]"]', randomWords({ min: 2, max: 6, join: ' ' }));
     }
     
     const required = await page.evaluate(() => document.querySelectorAll('input.required'));
-    required.forEach(element => {
-      element.type(randomWords({ min: 2, max: 6, join: ' ' }))
-    })
+    if (required.length) {
+      required.forEach(element => {
+        if (!element.value) {
+          await element.type(randomWords({ min: 2, max: 6, join: ' ' }));
+        }
+      });
+    }
 
     const [response] = await Promise.all([
       page.waitForNavigation(),
       page.click('#edit-submit')
     ]);
 
-    const message = page.evaluate(() => document.querySelector('div.success').innerText);
+    const message = await page.evaluate(() => document.querySelector('div.success').innerText);
     t.true(message.includes('has been created.'));
   });
 })
