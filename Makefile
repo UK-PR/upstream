@@ -3,8 +3,6 @@ REMOTE_REPO=git@github.com:uk-d8/upstream.git
 BUILD_REPO=/tmp/upstream
 
 init:
-	eval $(shell ssh-agent -s)
-	@echo "$(GITHUB_UPSTREAM_PRIVATE_KEY)" | tr -d '\r' | ssh-add -
 	test -d /root/.ssh || mkdir /root/.ssh
 	chmod 700 /root/.ssh
 	cp .ci_ssh_config /root/.ssh/config
