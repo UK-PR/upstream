@@ -1,5 +1,32 @@
 <?php
 
+// change this to the final domain name to enable trusted host settings
+$live_domain = null;
+
+if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
+  $primary_domain = $_SERVER['HTTP_HOST'];
+  
+  // Redirect to https://$primary_domain in the Live environment
+  if ($live_domain && $_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
+    $primary_domain = $live_domain;
+  }
+
+  // domain mismatch? no https? redirect!
+  if ($_SERVER['HTTP_HOST'] != $primary_domain
+      || !isset($_SERVER['HTTP_USER_AGENT_HTTPS'])
+      || $_SERVER['HTTP_USER_AGENT_HTTPS'] != 'ON' ) {
+
+    # Name transaction "redirect" in New Relic for improved reporting (optional)
+    if (extension_loaded('newrelic')) {
+      newrelic_name_transaction("redirect");
+    }
+
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://'. $primary_domain . $_SERVER['REQUEST_URI']);
+    exit();
+  }
+}
+
 /**
  * Load services definition file.
  */
@@ -37,4 +64,11 @@ $settings['install_profile'] = 'config_installer';
 $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
+}
+
+// Drupal 8 Trusted Host Settings
+if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
+  if ($live_domain && $_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
+    $settings['trusted_host_patterns'] = array('^'. preg_quote($live_domain) .'$');
+  }
 }
