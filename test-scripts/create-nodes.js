@@ -26,11 +26,12 @@ node_urls.forEach(url => {
   test.serial('create ' + url, async t => {
     await page.goto(url);
 
-    if (await page.$('[name="title[0][value]"]') !== null) {
+    const titleEl = await page.evaluate(() => document.querySelector('[name="title[0][value]"]'));
+    if (titleEl !== null) {
       await page.type('[name="title[0][value]"]', 'Test Node');
     }
     
-    const required = await page.$$('input.required');
+    const required = await page.evaluate(() => document.querySelectorAll('input.required'));
     required.forEach(element => {
       element.type(randomWords({ min: 2, max: 6, join: ' ' }))
     })
@@ -40,8 +41,7 @@ node_urls.forEach(url => {
       page.click('#edit-submit')
     ]);
 
-    const message = await page.$('div.success').text();
-
+    const message = page.evaluate(() => document.querySelector('div.success').innerText);
     t.true(message.includes('has been created.'));
   });
 })
