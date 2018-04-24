@@ -52,7 +52,7 @@
     "drupal/core": "~8",
     "drupal/console": "~1",
     "drush/drush": "~8",
-    "webflo/drupal-core-strict": "8.5.1",
+    "webflo/drupal-core-strict": "8.5.2",
     "drupal/config_installer": "^1.0",
     "drupal/pathauto": "^1.0",
     "drupal/inline_entity_form": "^1.0",
