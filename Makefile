@@ -26,4 +26,4 @@ replay:
 	mv $(BUILD_REPO) build
 
 push:
-	cd app && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master
+	cd build && git add . && git commit -m "$(COMMIT_MESSAGE)" && git push origin master
