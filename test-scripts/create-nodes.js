@@ -33,7 +33,7 @@ node_urls.forEach(url => {
     
     const required = await page.evaluate(() => document.querySelectorAll('input.required'));
     if (required.length) {
-      required.forEach(element => {
+      required.forEach(async element => {
         if (!element.value) {
           await element.type(randomWords({ min: 2, max: 6, join: ' ' }));
         }
