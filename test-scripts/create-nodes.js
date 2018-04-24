@@ -24,6 +24,7 @@ test.after(t => {
 
 node_urls.forEach(url => {
   test.serial('create ' + url, async t => {
+    await page.setViewport({width: 1025, height: 768});
     await page.goto(url);
 
     const titleEl = await page.evaluate(() => document.querySelector('[name="title[0][value]"]'));
@@ -45,6 +46,7 @@ node_urls.forEach(url => {
       page.click('#edit-submit')
     ]);
 
+    await page.waitForSelector('div.success');
     const message = await page.evaluate(() => document.querySelector('div.success').innerText);
     t.true(message.includes('has been created.'));
   });
