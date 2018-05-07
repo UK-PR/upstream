@@ -22,6 +22,7 @@ test:
   stage: test
   image: newcity/lamp-testing-drupal
   script:
+    - rm -rf /app/*
     - mv $CI_PROJECT_DIR/build/* /app/
     - /startup.sh
     - cd /test
