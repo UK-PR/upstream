@@ -89,7 +89,8 @@
     "desandro/masonry": "4.2.1",
     "desandro/imagesloaded": "4.1.4",
     "enyo/dropzone": "5.1.1",
-    "uk-d8/ukd8": "dev-master"
+    "uk-d8/ukd8": "dev-master",
+    "ahebrank/frontback": "dev-master"
   },
   "require-dev": {
     "behat/mink": "~1.7",
