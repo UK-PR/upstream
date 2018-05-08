@@ -85,11 +85,12 @@
     "drupal/webform": "^5.0",
     "drupal/easy_breadcrumb": "^1.6",
     "drupal/entity_reference_widget_helpers": "1.x-dev",
-    "ahebrank/paragraphs_previewer_popup": "dev-8.x-1.x",
+    "drupal/headline_group": "^1.1",
     "desandro/masonry": "4.2.1",
     "desandro/imagesloaded": "4.1.4",
     "enyo/dropzone": "5.1.1",
     "uk-d8/ukd8": "dev-master",
+    "ahebrank/paragraphs_previewer_popup": "dev-8.x-1.x",
     "ahebrank/frontback": "dev-master"
   },
   "require-dev": {
