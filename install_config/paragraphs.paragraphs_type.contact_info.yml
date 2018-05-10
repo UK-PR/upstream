@@ -1,9 +1,0 @@
-uuid: f5d2237f-caef-4504-a85c-c7abf7f847e2
-langcode: en
-status: true
-dependencies: {  }
-id: contact_info
-label: 'Contact Info'
-icon_uuid: null
-description: 'One-off contact info block'
-behavior_plugins: {  }

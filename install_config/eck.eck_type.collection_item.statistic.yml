@@ -1,9 +1,0 @@
-uuid: 32425761-3984-4724-ac3b-52625b749134
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.collection_item
-name: Statistic
-type: statistic
-description: 'A large number or number-like phrase with some short explanation.'

@@ -1,9 +1,0 @@
-uuid: 67b03830-da82-4a48-ad68-3e63009b11ff
-langcode: en
-status: true
-dependencies: {  }
-name: 'People Categories'
-vid: people_categories
-description: 'Organization for persons'
-hierarchy: 0
-weight: 0

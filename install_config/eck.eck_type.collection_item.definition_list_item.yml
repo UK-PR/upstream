@@ -1,9 +1,0 @@
-uuid: e1251001-d380-4eb2-890e-58132fe85a84
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.collection_item
-name: 'Definition List Item'
-type: definition_list_item
-description: 'A dt / dd pair'
