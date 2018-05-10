@@ -1,0 +1,34 @@
+uuid: f9743de4-3a51-482b-b5f2-7e5de34ccdeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_media_links.field_headline_group
+    - field.field.paragraph.social_media_links.field_links_simple
+    - paragraphs.paragraphs_type.social_media_links
+  module:
+    - headline_group
+    - link
+id: paragraph.social_media_links.default
+targetEntityType: paragraph
+bundle: social_media_links
+mode: default
+content:
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_links_simple:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

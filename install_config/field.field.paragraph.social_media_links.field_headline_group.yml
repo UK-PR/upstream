@@ -1,0 +1,28 @@
+uuid: 9e32d79d-9231-4af9-abe2-1d801fc2943c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_group
+    - paragraphs.paragraphs_type.social_media_links
+  module:
+    - headline_group
+id: paragraph.social_media_links.field_headline_group
+field_name: field_headline_group
+entity_type: paragraph
+bundle: social_media_links
+label: 'Headline group'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    superhead: ''
+    headline: ''
+    subhead: ''
+default_value_callback: ''
+settings:
+  include_superhead: 0
+  title_behavior: headline_is_blank
+  include_subhead: 0
+field_type: headline_group

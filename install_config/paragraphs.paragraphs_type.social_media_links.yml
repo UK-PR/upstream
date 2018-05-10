@@ -1,0 +1,9 @@
+uuid: 3b799042-63f6-452f-a871-db11b38443c2
+langcode: en
+status: true
+dependencies: {  }
+id: social_media_links
+label: 'Social Media Links'
+icon_uuid: null
+description: 'Links out to social media styled as icons'
+behavior_plugins: {  }
