@@ -18,7 +18,7 @@ clone: init
 	cd $(BUILD_REPO) && rm -rf *
 
 replay:
-	rm Makefile .gitlab-ci.yml .ci_ssh_config .braids.json
+	rm -f Makefile .gitlab-ci.yml .ci_ssh_config
 	rsync -rlDv --exclude .git --exclude install-config --exclude default-settings --exclude misc-content --exclude test . $(BUILD_REPO)
 	rsync -rlDv install-config/ $(BUILD_REPO)/web/sites/default/config
 	rsync -rdDv default-settings/ $(BUILD_REPO)/web/sites/default/
