@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_categories
     - node.type.news
   module:
     - open_summary
@@ -31,6 +32,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_categories:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   path:
     type: path
     weight: 4

@@ -23,5 +23,6 @@ permissions:
   - 'use text format restricted_html'
   - 'view any collection_item entities'
   - 'view any paragraphs previewer popup'
+  - 'view any quote entities'
   - 'view embederator entity'
   - 'view media'

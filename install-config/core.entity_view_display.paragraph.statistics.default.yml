@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.statistics.field_collection_items
-    - field.field.paragraph.statistics.field_title
+    - field.field.paragraph.statistics.field_headline_group
     - paragraphs.paragraphs_type.statistics
+  module:
+    - headline_group
 id: paragraph.statistics.default
 targetEntityType: paragraph
 bundle: statistics
@@ -20,12 +22,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_title:
+  field_headline_group:
     weight: 0
     label: hidden
     settings:
-      link_to_entity: false
+      headline_group_tag: h2
+      headline_group_class: headline-group
+      headline_group_bem: '1'
     third_party_settings: {  }
-    type: string
+    type: headline_default
     region: content
 hidden: {  }

@@ -15,5 +15,6 @@ permissions:
   - 'never autoplay videos'
   - 'search content'
   - 'view any collection_item entities'
+  - 'view any quote entities'
   - 'view embederator entity'
   - 'view media'

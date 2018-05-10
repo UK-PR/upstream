@@ -1,0 +1,19 @@
+uuid: f0ffb03e-81d5-4ac1-a9af-b6a0a2565236
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_title
+    - paragraphs.paragraphs_type.contact_info
+id: paragraph.contact_info.field_job_title
+field_name: field_job_title
+entity_type: paragraph
+bundle: contact_info
+label: 'Job Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

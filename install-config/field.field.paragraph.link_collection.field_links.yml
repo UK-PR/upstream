@@ -1,0 +1,28 @@
+uuid: 1f921e95-c93c-4c67-9608-8669fe099834
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.described_link
+    - field.storage.paragraph.field_links
+    - paragraphs.paragraphs_type.link_collection
+id: paragraph.link_collection.field_links
+field_name: field_links
+entity_type: paragraph
+bundle: link_collection
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      described_link: described_link
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

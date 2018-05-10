@@ -4,10 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.statistics.field_collection_items
-    - field.field.paragraph.statistics.field_title
+    - field.field.paragraph.statistics.field_headline_group
     - paragraphs.paragraphs_type.statistics
   module:
     - entity_reference_widget_helpers
+    - headline_group
     - inline_entity_form
 id: paragraph.statistics.default
 targetEntityType: paragraph
@@ -31,13 +32,11 @@ content:
         collection_link: 0
     type: inline_entity_form_complex
     region: content
-  field_title:
+  field_headline_group:
     weight: 0
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: headline_complete
     region: content
 hidden:
   created: true

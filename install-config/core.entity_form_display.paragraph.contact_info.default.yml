@@ -1,0 +1,88 @@
+uuid: 6e37e30b-f69d-4ade-acba-ab6ad21026a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser_modal
+    - field.field.paragraph.contact_info.field_body
+    - field.field.paragraph.contact_info.field_headline_group
+    - field.field.paragraph.contact_info.field_info_list
+    - field.field.paragraph.contact_info.field_job_title
+    - field.field.paragraph.contact_info.field_name
+    - field.field.paragraph.contact_info.field_photo
+    - paragraphs.paragraphs_type.contact_info
+  module:
+    - entity_browser
+    - entity_reference_widget_helpers
+    - headline_group
+    - inline_entity_form
+    - text
+id: paragraph.contact_info.default
+targetEntityType: paragraph
+bundle: contact_info
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_info_list:
+    weight: 5
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: item
+      label_plural: items
+    third_party_settings:
+      entity_reference_widget_helpers:
+        dropdown_if_less: ''
+        use_dropdown: 0
+        collection_link: 0
+    type: inline_entity_form_simple
+    region: content
+  field_job_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo:
+    weight: 4
+    settings:
+      entity_browser: media_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: 0
+    type: entity_browser_entity_reference
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

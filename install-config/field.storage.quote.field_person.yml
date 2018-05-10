@@ -1,0 +1,20 @@
+uuid: 19afd110-ecdf-4cbc-b0b5-0f3628e1c6a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - node
+id: quote.field_person
+field_name: field_person
+entity_type: quote
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 4c38e11e-43cd-4ead-88ce-a9ce01b656c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: quote.field_attribution_second_line
+field_name: field_attribution_second_line
+entity_type: quote
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

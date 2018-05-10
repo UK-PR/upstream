@@ -1,0 +1,39 @@
+uuid: af547682-9203-493a-968b-5103fd5f3274
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pullquote.field_quote
+    - paragraphs.paragraphs_type.pullquote
+  module:
+    - entity_browser_entity_form
+    - entity_reference_widget_helpers
+    - inline_entity_form
+id: paragraph.pullquote.default
+targetEntityType: paragraph
+bundle: pullquote
+mode: default
+content:
+  field_quote:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+      entity_reference_widget_helpers:
+        use_dropdown: '1'
+        dropdown_if_less: ''
+        collection_link: 0
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

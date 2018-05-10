@@ -4,31 +4,30 @@ status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.statistic
-    - field.field.collection_item.statistic.field_label_above
-    - field.field.collection_item.statistic.field_label_below
+    - field.field.collection_item.statistic.field_description
+    - field.field.collection_item.statistic.field_headline_group
   module:
     - entity_reference_widget_helpers
+    - headline_group
     - text
 id: collection_item.statistic.default
 targetEntityType: collection_item
 bundle: statistic
 mode: default
 content:
-  field_label_above:
-    weight: 0
+  field_description:
+    weight: 4
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_label_below:
-    weight: 2
-    settings:
-      rows: 2
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_headline_group:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
     region: content
   title:
     type: string_textfield

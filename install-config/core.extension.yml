@@ -34,12 +34,15 @@ module:
   file_browser: 0
   filter: 0
   focal_point: 0
+  frontback: 0
   google_tag: 0
+  headline_group: 0
   help: 0
   history: 0
   image: 0
   inline_entity_form: 0
   jquery_timepicker: 0
+  kint: 0
   link: 0
   linkit: 0
   media: 0

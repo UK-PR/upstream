@@ -5,5 +5,5 @@ dependencies: {  }
 id: statistics
 label: Statistics
 icon_uuid: null
-description: ''
+description: 'A list of numerical factoid panels'
 behavior_plugins: {  }

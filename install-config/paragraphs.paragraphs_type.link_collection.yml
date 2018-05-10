@@ -1,0 +1,9 @@
+uuid: d60370b7-0ee0-4afe-8553-8fb332255898
+langcode: en
+status: true
+dependencies: {  }
+id: link_collection
+label: 'Link Collection'
+icon_uuid: null
+description: 'A list of described links'
+behavior_plugins: {  }

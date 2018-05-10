@@ -1,0 +1,5 @@
+frontback_repo_id: 'https://gitlab.com/newcity/uk-d8/drupal'
+frontback_endpoint: 'https://magicyeti.us/frontback'
+hide_button: false
+hide_assignee_options: false
+hide_reporter_options: false
