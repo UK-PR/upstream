@@ -1,0 +1,9 @@
+uuid: 5c01eeb6-b53d-4891-b8f9-5d21f6f330ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.quote
+name: 'Pullquote Reference'
+type: pullquote_reference
+description: 'A quote by a Person node'

@@ -1,0 +1,28 @@
+uuid: 3bf22396-5196-4edf-b462-572d68d0ec5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.definition_list_item
+    - field.storage.paragraph.field_info_list
+    - paragraphs.paragraphs_type.contact_info
+id: paragraph.contact_info.field_info_list
+field_name: field_info_list
+entity_type: paragraph
+bundle: contact_info
+label: 'Info List'
+description: 'Include things like: address, email, phone number, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      definition_list_item: definition_list_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 2f986d44-e7ef-4d3a-8ff1-a86bd72f0bea
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - media
+id: quote.field_media
+field_name: field_media
+entity_type: quote
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

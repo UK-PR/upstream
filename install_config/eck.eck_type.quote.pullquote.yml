@@ -1,0 +1,9 @@
+uuid: 47599e0a-a4ff-4282-81c7-9b51ada9d2e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.quote
+name: Pullquote
+type: pullquote
+description: 'A quotation and attribute'

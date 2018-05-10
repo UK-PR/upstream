@@ -1,0 +1,9 @@
+uuid: 41933ad8-1204-47f2-bbcc-412b83f17f19
+langcode: en
+status: true
+dependencies: {  }
+id: body
+label: Body
+icon_uuid: null
+description: 'Rich text block'
+behavior_plugins: {  }

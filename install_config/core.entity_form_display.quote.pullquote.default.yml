@@ -1,0 +1,72 @@
+uuid: 8cf8fed5-2577-4959-818f-fd208d741f82
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.quote.pullquote
+    - entity_browser.browser.media_browser_modal
+    - field.field.quote.pullquote.field_attribution_first_line
+    - field.field.quote.pullquote.field_attribution_second_line
+    - field.field.quote.pullquote.field_media
+    - field.field.quote.pullquote.field_quote
+  module:
+    - entity_browser
+    - entity_reference_widget_helpers
+    - text
+id: quote.pullquote.default
+targetEntityType: quote
+bundle: pullquote
+mode: default
+content:
+  field_attribution_first_line:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_attribution_second_line:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media:
+    weight: 4
+    settings:
+      entity_browser: media_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: 0
+    type: entity_browser_entity_reference
+    region: content
+  field_quote:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Quote by John Doe'
+    third_party_settings:
+      entity_reference_widget_helpers:
+        eck_title_label_override: 'Administrative label'
+        eck_title_description_override: ''
+hidden: {  }

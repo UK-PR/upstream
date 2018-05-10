@@ -1,0 +1,72 @@
+uuid: 94f4faf8-5f1d-4d2d-9116-d1dd620d927a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_info.field_body
+    - field.field.paragraph.contact_info.field_headline_group
+    - field.field.paragraph.contact_info.field_info_list
+    - field.field.paragraph.contact_info.field_job_title
+    - field.field.paragraph.contact_info.field_name
+    - field.field.paragraph.contact_info.field_photo
+    - paragraphs.paragraphs_type.contact_info
+  module:
+    - headline_group
+    - text
+id: paragraph.contact_info.default
+targetEntityType: paragraph
+bundle: contact_info
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: h2
+      headline_group_class: headline-group
+      headline_group_bem: '1'
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+  field_info_list:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_job_title:
+    weight: 4
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    weight: 2
+    label: visually_hidden
+    settings:
+      view_mode: thumbnail
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: cd2c5995-5a3a-4a16-9e90-8ff110914c2e
+langcode: en
+status: true
+dependencies: {  }
+name: 'News and Events Categories'
+vid: news_events_categories
+description: ''
+hierarchy: 0
+weight: 0

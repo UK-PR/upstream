@@ -1,0 +1,19 @@
+uuid: 90a4a4d6-76e5-4cab-8fbc-d86cb739ca65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.contact_info
+id: paragraph.contact_info.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: contact_info
+label: Name
+description: 'Name of the person'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

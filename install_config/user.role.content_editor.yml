@@ -1,0 +1,25 @@
+uuid: 18b8928a-7f23-4d84-8087-155fe3075426
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content Editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer taxonomy'
+  - 'bypass eck entity access'
+  - 'bypass node access'
+  - 'create media'
+  - 'customize shortcut links'
+  - 'update any media'
+  - 'view the administration theme'

@@ -1,0 +1,28 @@
+uuid: 0f80e8c7-6e5d-497f-9724-f89a34bf9d1d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'dropzone upload files'
+  - 'never autoplay videos'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format inline_html'
+  - 'use text format restricted_html'
+  - 'view any collection_item entities'
+  - 'view any paragraphs previewer popup'
+  - 'view any quote entities'
+  - 'view embederator entity'
+  - 'view media'

@@ -1,0 +1,28 @@
+uuid: edd5274f-3911-464e-abf7-76d3bd43b78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.quote.pullquote
+    - field.storage.quote.field_media
+    - media.type.image
+id: quote.pullquote.field_media
+field_name: field_media
+entity_type: quote
+bundle: pullquote
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
