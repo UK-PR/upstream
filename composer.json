@@ -106,6 +106,7 @@
     "drupal/chosen": "^2.5",
     "drupal/entity_embed": "1.x-dev",
     "harvesthq/chosen": "1.6.1",
+    "drupal/simple_gmap": "^1.4",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
