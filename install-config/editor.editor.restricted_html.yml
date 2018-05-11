@@ -39,10 +39,10 @@ settings:
           items:
             - Source
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: un
+    stylescombo:
+      styles: ''
     drupallink:
       linkit_enabled: true
       linkit_profile: default

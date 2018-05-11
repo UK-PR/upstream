@@ -1,0 +1,21 @@
+uuid: 27e8c5f7-8d8e-4ce9-9c99-29c6c8d63ed9
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: location.field_address
+field_name: field_address
+entity_type: location
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

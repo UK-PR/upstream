@@ -1,0 +1,9 @@
+uuid: ee1d74a4-ebfe-4ec0-bfe8-456a4b9e4c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.location
+name: 'Linked Location'
+type: linked_location
+description: 'A location with optional link and/or address'

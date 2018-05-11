@@ -1,0 +1,10 @@
+uuid: 16fcb88a-0ac4-49d2-b21b-8c63e33b4f17
+langcode: en
+status: true
+dependencies: {  }
+id: figure_instance
+label: 'Figure Instance'
+created: false
+changed: false
+uid: false
+title: true

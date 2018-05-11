@@ -22,6 +22,8 @@ permissions:
   - 'use text format inline_html'
   - 'use text format restricted_html'
   - 'view any collection_item entities'
+  - 'view any figure_instance entities'
+  - 'view any location entities'
   - 'view any paragraphs previewer popup'
   - 'view any quote entities'
   - 'view embederator entity'

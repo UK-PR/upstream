@@ -39,7 +39,7 @@ widgets:
       thumbnail_method: contain
       submit_text: 'Select image'
     uuid: 3977638f-fe3f-4e3e-8079-b1e5a8cb476a
-    weight: 1
+    weight: -9
     label: 'Add image'
     id: dropzonejs_media_entity_inline_entity_form
   f7c6af85-316f-40c5-8a49-4785a562ad9f:
@@ -49,7 +49,7 @@ widgets:
       form_mode: default
       submit_text: 'Save video'
     uuid: f7c6af85-316f-40c5-8a49-4785a562ad9f
-    weight: 2
+    weight: -8
     label: 'Add hosted video'
     id: entity_form
   3d53559d-4c78-49b2-ba9a-04ecde5535e7:
@@ -59,6 +59,6 @@ widgets:
       submit_text: 'Select media'
       auto_select: false
     uuid: 3d53559d-4c78-49b2-ba9a-04ecde5535e7
-    weight: 3
+    weight: -10
     label: 'Browse media'
     id: view

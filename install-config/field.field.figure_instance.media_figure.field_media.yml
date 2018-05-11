@@ -1,0 +1,34 @@
+uuid: 6d1b494e-0d85-4475-998a-6d1099899def
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.figure_instance.media_figure
+    - field.storage.figure_instance.field_media
+    - media.type.audio
+    - media.type.hosted_video
+    - media.type.image
+    - media.type.video
+id: figure_instance.media_figure.field_media
+field_name: field_media
+entity_type: figure_instance
+bundle: media_figure
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      hosted_video: hosted_video
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference

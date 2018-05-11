@@ -1,0 +1,45 @@
+uuid: 6be431c2-ce67-4c26-bd4e-6df93d2e060d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.figure_instance.media_figure
+    - field.field.figure_instance.media_figure.field_body
+    - field.field.figure_instance.media_figure.field_headline_group
+    - field.field.figure_instance.media_figure.field_media
+  module:
+    - headline_group
+    - text
+id: figure_instance.media_figure.default
+targetEntityType: figure_instance
+bundle: media_figure
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_headline_group:
+    weight: 1
+    label: hidden
+    settings:
+      headline_group_tag: div
+      headline_group_class: headline-group
+      headline_group_bem: true
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: half_width
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  title: true

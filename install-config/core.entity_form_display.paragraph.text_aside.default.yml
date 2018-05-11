@@ -1,0 +1,51 @@
+uuid: 4180a599-635a-49e8-9d58-2d8cff49aad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_aside.field_body
+    - field.field.paragraph.text_aside.field_headline_group
+    - field.field.paragraph.text_aside.field_media_instance
+    - paragraphs.paragraphs_type.text_aside
+  module:
+    - entity_reference_widget_helpers
+    - headline_group
+    - inline_entity_form
+    - text
+id: paragraph.text_aside.default
+targetEntityType: paragraph
+bundle: text_aside
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_media_instance:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: figure
+      label_plural: figures
+    third_party_settings:
+      entity_reference_widget_helpers:
+        dropdown_if_less: ''
+        use_dropdown: 0
+        collection_link: 0
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

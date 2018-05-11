@@ -1,0 +1,9 @@
+uuid: 47977a21-2da3-4bfc-ac30-0839f55a3789
+langcode: en
+status: true
+dependencies: {  }
+name: 'Media Tags'
+vid: media_tags
+description: 'Organization for media'
+hierarchy: 0
+weight: 0

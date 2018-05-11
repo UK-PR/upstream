@@ -1,0 +1,50 @@
+uuid: 9ca831f0-0047-41ed-ae3e-21a09ade5a4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.news
+  module:
+    - entity_reference_revisions
+id: node.news.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: news
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      body:
+        weight: 9
+        enabled: false
+      call_to_action:
+        weight: 10
+        enabled: false
+      contact_info:
+        weight: 11
+        enabled: false
+      link_collection:
+        weight: 12
+        enabled: false
+      pullquote:
+        weight: 13
+        enabled: false
+      social_media_links:
+        weight: 14
+        enabled: false
+      statistics:
+        weight: 15
+        enabled: false
+      text_aside:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

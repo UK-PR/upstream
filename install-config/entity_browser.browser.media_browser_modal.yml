@@ -14,8 +14,8 @@ name: media_browser_modal
 label: 'Media Browser modal'
 display: modal
 display_configuration:
-  width: '850'
-  height: '600'
+  width: ''
+  height: ''
   link_text: 'Select media'
   auto_open: false
 selection_display: no_display
@@ -39,17 +39,17 @@ widgets:
       thumbnail_method: contain
       submit_text: 'Select image'
     uuid: dec0ac11-47a5-4fb9-8fac-e7186978c018
-    weight: 1
+    weight: -9
     label: 'Add image'
     id: dropzonejs_media_entity_inline_entity_form
   c1636017-c025-414b-b696-707ea9f85722:
     settings:
       entity_type: media
-      bundle: ''
+      bundle: audio
       form_mode: default
       submit_text: 'Save video'
     uuid: c1636017-c025-414b-b696-707ea9f85722
-    weight: 2
+    weight: -8
     label: 'Add hosted video'
     id: entity_form
   69c27086-ce85-4e5e-b406-202f0216f7c9:
@@ -59,6 +59,6 @@ widgets:
       submit_text: 'Select media'
       auto_select: false
     uuid: 69c27086-ce85-4e5e-b406-202f0216f7c9
-    weight: 3
+    weight: -10
     label: 'Browse media'
     id: view

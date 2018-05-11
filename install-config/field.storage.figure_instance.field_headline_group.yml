@@ -1,0 +1,19 @@
+uuid: aafe2363-3705-4d1b-b588-f1828ad6fb95
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - headline_group
+id: figure_instance.field_headline_group
+field_name: field_headline_group
+entity_type: figure_instance
+type: headline_group
+settings: {  }
+module: headline_group
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
