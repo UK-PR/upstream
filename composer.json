@@ -79,7 +79,7 @@
     "drupal/field_group": "^1.0",
     "drupal/open_summary": "1.x-dev",
     "drupal/components": "^1.0",
-    "drupal/name": "^1.0",
+    "drupal/name": "^1.0@RC",
     "drupal/auto_entitylabel": "^2.0",
     "drupal/focal_point": "^1.0",
     "drupal/metatag": "^1.1",
