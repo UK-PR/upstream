@@ -43,6 +43,18 @@
           "type": "zip"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "harvesthq/chosen",
+        "version": "1.6.1",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/harvesthq/chosen/releases/download/v1.6.1/chosen_v1.6.1.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
@@ -93,6 +105,7 @@
     "ahebrank/frontback": "dev-master",
     "drupal/chosen": "^2.5",
     "drupal/entity_embed": "1.x-dev",
+    "harvesthq/chosen": "1.6.1",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
