@@ -92,6 +92,7 @@
     "ahebrank/paragraphs_previewer_popup": "dev-8.x-1.x",
     "ahebrank/frontback": "dev-master",
     "drupal/chosen": "^2.5",
+    "drupal/entity_embed": "1.x-dev",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
