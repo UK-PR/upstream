@@ -1,0 +1,9 @@
+uuid: 57f6561a-c9ec-4fc9-b861-3a333057de71
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+name: 'Contact Info'
+type: contact_info
+description: 'Contact information block'

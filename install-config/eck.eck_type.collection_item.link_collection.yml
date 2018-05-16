@@ -1,0 +1,9 @@
+uuid: b2dfa383-810a-4523-8c20-4946e2fa0172
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+name: 'Link Collection'
+type: link_collection
+description: 'A collection of described links'

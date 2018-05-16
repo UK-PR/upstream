@@ -1,0 +1,41 @@
+uuid: 92f3a38f-d79a-446b-946e-1a63dd406ead
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.call_to_action
+    - field.field.collection_item.call_to_action.field_description
+    - field.field.collection_item.call_to_action.field_link
+  module:
+    - link
+    - text
+id: collection_item.call_to_action.default
+targetEntityType: collection_item
+bundle: call_to_action
+mode: default
+content:
+  field_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

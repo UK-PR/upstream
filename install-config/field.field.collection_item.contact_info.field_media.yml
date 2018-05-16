@@ -1,0 +1,32 @@
+uuid: e5779bc8-f069-4bd1-bb70-0e1ad2a8f2dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.contact_info
+    - field.storage.collection_item.field_media
+    - media.type.hosted_video
+    - media.type.image
+    - media.type.video
+id: collection_item.contact_info.field_media
+field_name: field_media
+entity_type: collection_item
+bundle: contact_info
+label: Media
+description: 'Probably a person/headshot'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      hosted_video: hosted_video
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

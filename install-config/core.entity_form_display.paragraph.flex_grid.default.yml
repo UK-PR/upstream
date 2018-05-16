@@ -1,0 +1,39 @@
+uuid: 908c55b1-a332-4fa2-b0ae-b6e73463bb18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flex_grid.field_collection_items
+    - paragraphs.paragraphs_type.flex_grid
+  module:
+    - entity_browser_entity_form
+    - entity_reference_widget_helpers
+    - inline_entity_form
+id: paragraph.flex_grid.default
+targetEntityType: paragraph
+bundle: flex_grid
+mode: default
+content:
+  field_collection_items:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: item
+      label_plural: items
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+      entity_reference_widget_helpers:
+        use_dropdown: '1'
+        dropdown_if_less: '50'
+        collection_link: 0
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -23,6 +23,7 @@ module:
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   eck: 0
+  eck_autolabel: 0
   editor: 0
   embed: 0
   embederator: 0
@@ -53,6 +54,7 @@ module:
   media: 0
   menu_ui: 0
   metatag: 0
+  name: 0
   node: 0
   open_summary: 0
   options: 0
@@ -66,6 +68,7 @@ module:
   responsive_image: 0
   search: 0
   shortcut: 0
+  simple_gmap: 0
   system: 0
   taxonomy: 0
   text: 0

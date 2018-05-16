@@ -1,0 +1,44 @@
+uuid: 5297345d-26e6-4dbf-bc3c-1daff300c351
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.call_to_action
+    - field.field.collection_item.call_to_action.field_description
+    - field.field.collection_item.call_to_action.field_link
+  module:
+    - link
+    - text
+id: collection_item.call_to_action.default
+targetEntityType: collection_item
+bundle: call_to_action
+mode: default
+content:
+  field_description:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_link:
+    weight: -3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

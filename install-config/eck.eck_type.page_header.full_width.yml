@@ -1,0 +1,9 @@
+uuid: 9763bd1a-4d9a-4ddf-8e8d-6f243e6b2318
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.page_header
+name: 'Full Width'
+type: full_width
+description: 'Full width media with page header below'

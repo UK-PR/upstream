@@ -12,8 +12,8 @@ id: node.event.field_media
 field_name: field_media
 entity_type: node
 bundle: event
-label: Media
-description: ''
+label: 'Featured image'
+description: 'This image appears in event listings as well as on the event detail page.'
 required: false
 translatable: true
 default_value: {  }

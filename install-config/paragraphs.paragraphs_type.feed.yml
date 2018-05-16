@@ -1,0 +1,9 @@
+uuid: 237081bc-5ecc-427b-9a12-28b1e61bd66d
+langcode: en
+status: true
+dependencies: {  }
+id: feed
+label: Feed
+icon_uuid: null
+description: 'A filtered listing'
+behavior_plugins: {  }

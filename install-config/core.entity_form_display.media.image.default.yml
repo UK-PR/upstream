@@ -5,9 +5,12 @@ dependencies:
   config:
     - field.field.media.image.field_attribution
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_tags
     - image.style.thumbnail
     - media.type.image
   module:
+    - chosen_field
+    - entity_reference_widget_helpers
     - focal_point
 _core:
   default_config_hash: nZlttO4YMwMCpkhYMz7bQ1ZMjABGc59YY1us3eSfvTY
@@ -33,6 +36,14 @@ content:
     third_party_settings: {  }
     type: image_focal_point
     weight: 1
+    region: content
+  field_tags:
+    weight: 27
+    settings: {  }
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: '1'
+    type: chosen_select
     region: content
   name:
     type: string_textfield

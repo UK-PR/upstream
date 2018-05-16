@@ -1,0 +1,9 @@
+uuid: fcb95a11-51b4-4721-ba28-e7e19184952b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+name: Body
+type: body
+description: 'Just some rich text'

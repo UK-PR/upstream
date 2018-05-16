@@ -1,0 +1,42 @@
+uuid: 89149c76-b13c-4441-91fd-fbbae44efe01
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.pullquote
+    - field.field.collection_item.pullquote.field_attribution_1
+    - field.field.collection_item.pullquote.field_attribution_2
+    - field.field.collection_item.pullquote.field_description
+  module:
+    - text
+id: collection_item.pullquote.default
+targetEntityType: collection_item
+bundle: pullquote
+mode: default
+content:
+  field_attribution_1:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_attribution_2:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_description:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  title: true

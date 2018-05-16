@@ -1,5 +1,5 @@
 status: '1'
-pattern: '[node:field_first_name:value] [node:field_last_name:value]'
+pattern: '[node:field_name:given] [node:field_name:family]'
 php: 0
 escape: 0
 dependencies:

@@ -1,0 +1,9 @@
+uuid: ad345dc0-fea3-4d11-80ec-2bbaa3b85421
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.page_header
+name: Text-only
+type: text_only
+description: 'Text-only page header with optional CTA'

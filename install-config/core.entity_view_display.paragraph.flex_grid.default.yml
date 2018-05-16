@@ -1,0 +1,22 @@
+uuid: d082dcd3-0b43-4525-86cd-1feb1e959bcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flex_grid.field_collection_items
+    - paragraphs.paragraphs_type.flex_grid
+id: paragraph.flex_grid.default
+targetEntityType: paragraph
+bundle: flex_grid
+mode: default
+content:
+  field_collection_items:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

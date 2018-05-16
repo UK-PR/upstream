@@ -1,0 +1,23 @@
+uuid: ca14cd56-434c-4608-aeb6-c2edd4b0c6af
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.call_to_action
+    - field.storage.collection_item.field_link
+  module:
+    - link
+id: collection_item.call_to_action.field_link
+field_name: field_link
+entity_type: collection_item
+bundle: call_to_action
+label: Link
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,9 @@
+uuid: c21445e2-9155-43d6-9126-25191d2ec120
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+name: 'Custom Teaser'
+type: custom_teaser
+description: 'Similar to a content reference, but a DIY teaser'

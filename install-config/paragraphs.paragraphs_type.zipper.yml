@@ -1,0 +1,9 @@
+uuid: 8f508a09-76a2-40bf-a13f-154189c9743b
+langcode: en
+status: true
+dependencies: {  }
+id: zipper
+label: Zipper
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

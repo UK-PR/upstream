@@ -1,0 +1,9 @@
+uuid: af45a004-2d3b-426b-bf35-12f020db19e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+name: 'Media Figure'
+type: media_figure
+description: 'A media item with caption'

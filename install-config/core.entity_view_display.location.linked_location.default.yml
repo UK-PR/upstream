@@ -8,6 +8,7 @@ dependencies:
     - field.field.location.linked_location.field_link
   module:
     - link
+    - simple_gmap
 id: location.linked_location.default
 targetEntityType: location
 bundle: linked_location
@@ -15,15 +16,26 @@ mode: default
 content:
   field_address:
     weight: -3
-    label: above
+    label: hidden
     settings:
-      link_to_entity: false
+      include_map: true
+      apikey: ''
+      iframe_width: '200'
+      iframe_height: '200'
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_link: false
+      include_text: false
     third_party_settings: {  }
-    type: string
+    type: simple_gmap
     region: content
   field_link:
     weight: -4
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false

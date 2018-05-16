@@ -1,0 +1,19 @@
+uuid: 3f063bfa-303a-47df-ad45-c31e2aa67ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.contact_info
+    - field.storage.collection_item.field_name_text
+id: collection_item.contact_info.field_name_text
+field_name: field_name_text
+entity_type: collection_item
+bundle: contact_info
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: d64be87b-a98a-4f8d-9c97-63d5a4467eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.calls_to_action.field_collection_items
+    - paragraphs.paragraphs_type.calls_to_action
+id: paragraph.calls_to_action.default
+targetEntityType: paragraph
+bundle: calls_to_action
+mode: default
+content:
+  field_collection_items:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

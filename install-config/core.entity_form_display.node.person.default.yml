@@ -7,16 +7,17 @@ dependencies:
     - field.field.node.person.body
     - field.field.node.person.field_categories
     - field.field.node.person.field_email
-    - field.field.node.person.field_first_name
     - field.field.node.person.field_job_title
-    - field.field.node.person.field_last_name
+    - field.field.node.person.field_location_text
     - field.field.node.person.field_media
+    - field.field.node.person.field_name
     - field.field.node.person.field_phone
     - node.type.person
   module:
     - chosen_field
     - entity_browser
     - entity_reference_widget_helpers
+    - name
     - open_summary
     - path
     - text
@@ -38,12 +39,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_categories:
-    weight: 8
+    weight: 7
     settings: {  }
     third_party_settings:
       entity_reference_widget_helpers:
@@ -58,24 +59,16 @@ content:
     third_party_settings: {  }
     type: email_default
     region: content
-  field_first_name:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_job_title:
-    weight: 9
+    weight: 8
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_last_name:
-    weight: 1
+  field_location_text:
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -98,6 +91,12 @@ content:
         collection_link: 0
     type: entity_browser_entity_reference
     region: content
+  field_name:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: name_default
+    region: content
   field_phone:
     weight: 11
     settings:
@@ -108,7 +107,7 @@ content:
     region: content
   path:
     type: path
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -116,19 +115,19 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 5
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 2
     region: content
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 0
     settings:
       match_operator: CONTAINS
       size: 60
@@ -136,7 +135,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

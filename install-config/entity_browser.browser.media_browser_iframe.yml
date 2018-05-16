@@ -62,3 +62,13 @@ widgets:
     weight: -10
     label: 'Browse media'
     id: view
+  89cfe85c-298c-4668-a91b-fab632301137:
+    settings:
+      entity_type: media
+      bundle: audio
+      form_mode: default
+      submit_text: 'Save audio'
+    uuid: 89cfe85c-298c-4668-a91b-fab632301137
+    weight: 4
+    label: 'Add audio'
+    id: entity_form

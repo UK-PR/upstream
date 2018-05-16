@@ -1,0 +1,20 @@
+uuid: 2ee88a6d-41bd-4d67-beb6-59099008f5ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - paragraphs
+id: paragraph.field_main
+field_name: field_main
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: collection_item
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

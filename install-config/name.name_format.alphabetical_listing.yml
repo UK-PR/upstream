@@ -1,0 +1,8 @@
+uuid: 293aa564-79de-48a9-9775-35565763c197
+langcode: en
+status: true
+dependencies: {  }
+id: alphabetical_listing
+label: 'Alphabetical Listing'
+locked: false
+pattern: 'f+(, )g (=(\()c-(\)))'

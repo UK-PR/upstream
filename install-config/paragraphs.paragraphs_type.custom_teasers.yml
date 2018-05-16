@@ -1,0 +1,9 @@
+uuid: 2e7014ed-cc01-4c49-acff-68472b910baa
+langcode: en
+status: true
+dependencies: {  }
+id: custom_teasers
+label: 'Custom Teasers'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

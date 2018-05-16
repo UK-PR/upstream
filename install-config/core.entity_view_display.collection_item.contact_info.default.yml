@@ -1,0 +1,68 @@
+uuid: 50527f4c-3ac6-4523-bcc0-cc8139a07c6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.contact_info
+    - field.field.collection_item.contact_info.field_described_items
+    - field.field.collection_item.contact_info.field_description
+    - field.field.collection_item.contact_info.field_job_title
+    - field.field.collection_item.contact_info.field_media
+    - field.field.collection_item.contact_info.field_name_text
+  module:
+    - text
+id: collection_item.contact_info.default
+targetEntityType: collection_item
+bundle: contact_info
+mode: default
+content:
+  field_described_items:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_description:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_job_title:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media:
+    weight: -3
+    label: hidden
+    settings:
+      view_mode: thumbnail
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_name_text:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

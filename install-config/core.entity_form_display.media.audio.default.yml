@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_tags
     - media.type.audio
   module:
+    - chosen_field
+    - entity_reference_widget_helpers
     - file
     - path
 _core:
@@ -27,6 +30,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_tags:
+    weight: 26
+    settings: {  }
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: '1'
+    type: chosen_select
     region: content
   name:
     type: string_textfield

@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.video.field_attribution
     - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_tags
     - media.type.video
   module:
+    - chosen_field
+    - entity_reference_widget_helpers
     - file
     - path
 _core:
@@ -21,12 +25,28 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_attribution:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_media_video_file:
     weight: 0
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_tags:
+    weight: 26
+    settings: {  }
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: '1'
+    type: chosen_select
     region: content
   name:
     type: string_textfield

@@ -1,0 +1,9 @@
+uuid: decdaa9f-c3bd-424e-9460-91e08a19b183
+langcode: en
+status: true
+dependencies: {  }
+id: flex_grid
+label: 'Flex Grid'
+icon_uuid: null
+description: 'A completely flexible grid of single-column content blocks'
+behavior_plugins: {  }

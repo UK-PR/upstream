@@ -1,0 +1,9 @@
+uuid: c35a1842-6ad9-4c8f-82b5-43c3568362de
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: Media
+icon_uuid: null
+description: 'Full-width captioned media'
+behavior_plugins: {  }

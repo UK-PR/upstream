@@ -1,0 +1,9 @@
+uuid: 497d42bb-ce9b-40c2-bebf-5f6c7cac47a7
+langcode: en
+status: true
+dependencies: {  }
+id: 2_1_slab
+label: '2:1 Slab'
+icon_uuid: null
+description: 'A content + aside slab'
+behavior_plugins: {  }

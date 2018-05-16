@@ -1,0 +1,40 @@
+uuid: e23dcfb4-70aa-4972-8261-0feea2bb8a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.link_collection
+    - field.field.collection_item.link_collection.field_described_items
+    - field.field.collection_item.link_collection.field_description
+  module:
+    - text
+id: collection_item.link_collection.default
+targetEntityType: collection_item
+bundle: link_collection
+mode: default
+content:
+  field_described_items:
+    weight: -3
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_description:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

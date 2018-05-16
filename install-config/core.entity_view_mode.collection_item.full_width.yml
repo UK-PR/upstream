@@ -1,0 +1,10 @@
+uuid: 753ba5b8-6df3-4303-a5cd-8044bd2cf3d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: collection_item.full_width
+label: 'Full width'
+targetEntityType: collection_item
+cache: true
