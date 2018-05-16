@@ -108,6 +108,7 @@
     "enyo/dropzone": "5.1.1",
     "harvesthq/chosen": "1.6.1",
     "webflo/drupal-core-strict": "8.5.3",
+    "drupal/viewfield": "^3.0@alpha",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
@@ -202,6 +203,10 @@
       },
       "drupal/auto_entitylabel": {
         "don't use entity provider name": "https://www.drupal.org/files/issues/auto_entitylabel-2923876-7-Broken-when-provider-entityId.patch"
+      },
+      "drupal/viewfield": {
+        "duplication ER items": "https://www.drupal.org/files/issues/2900913-5-viewfield-fix-duplicates.patch",
+        "context cache keys": "https://www.drupal.org/files/issues/same-view-different-arguments-2892073-4_0.patch"
       }
     }
   }
