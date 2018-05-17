@@ -15,7 +15,7 @@ field_name: field_main
 entity_type: paragraph
 bundle: 2_1_slab
 label: Main
-description: ''
+description: '2/3 width'
 required: false
 translatable: false
 default_value: {  }

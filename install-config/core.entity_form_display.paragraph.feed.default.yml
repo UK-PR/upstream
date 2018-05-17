@@ -1,0 +1,32 @@
+uuid: c2d8009a-4582-4713-b6e5-0000ccab4e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feed.field_headline_group
+    - field.field.paragraph.feed.field_view
+    - paragraphs.paragraphs_type.feed
+  module:
+    - headline_group
+    - viewfield
+id: paragraph.feed.default
+targetEntityType: paragraph
+bundle: feed
+mode: default
+content:
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_view:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,17 +1,17 @@
-uuid: e5779bc8-f069-4bd1-bb70-0e1ad2a8f2dd
+uuid: dd20de16-1598-4bc7-966c-952ca98209e6
 langcode: en
 status: true
 dependencies:
   config:
-    - eck.eck_type.collection_item.contact_info
+    - eck.eck_type.collection_item.pullquote
     - field.storage.collection_item.field_media
     - media.type.image
-id: collection_item.contact_info.field_media
+id: collection_item.pullquote.field_media
 field_name: field_media
 entity_type: collection_item
-bundle: contact_info
+bundle: pullquote
 label: Media
-description: 'Person/headshot (or Office building)'
+description: ''
 required: false
 translatable: true
 default_value: {  }
@@ -24,5 +24,5 @@ settings:
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: image
+    auto_create_bundle: ''
 field_type: entity_reference

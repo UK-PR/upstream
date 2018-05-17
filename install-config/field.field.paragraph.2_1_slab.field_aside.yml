@@ -18,7 +18,7 @@ field_name: field_aside
 entity_type: paragraph
 bundle: 2_1_slab
 label: Aside
-description: ''
+description: '1/3 width'
 required: false
 translatable: false
 default_value: {  }

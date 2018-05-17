@@ -12,9 +12,9 @@ third_party_settings:
   better_formats:
     allowed_formats_toggle: 1
     allowed_formats:
-      basic_html: basic_html
+      restricted_html: restricted_html
       inline_html: 0
-      restricted_html: 0
+      basic_html: 0
       full_html: 0
     default_order_toggle: 0
     default_order_wrapper:

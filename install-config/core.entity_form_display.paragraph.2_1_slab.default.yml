@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.paragraph.2_1_slab.field_aside
     - field.field.paragraph.2_1_slab.field_flip
+    - field.field.paragraph.2_1_slab.field_headline_group
     - field.field.paragraph.2_1_slab.field_main
     - paragraphs.paragraphs_type.2_1_slab
   module:
     - entity_browser_entity_form
     - entity_reference_widget_helpers
+    - headline_group
     - inline_entity_form
 id: paragraph.2_1_slab.default
 targetEntityType: paragraph
@@ -17,7 +19,7 @@ bundle: 2_1_slab
 mode: default
 content:
   field_aside:
-    weight: 1
+    weight: 2
     settings:
       form_mode: default
       override_labels: true
@@ -36,14 +38,20 @@ content:
     type: inline_entity_form_complex
     region: content
   field_flip:
-    weight: 2
+    weight: 3
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_main:
+  field_headline_group:
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_main:
+    weight: 1
     settings:
       form_mode: default
       override_labels: true

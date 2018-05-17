@@ -1,15 +1,15 @@
-uuid: 0827f725-0cbb-4e31-abc3-b8668707d1e8
+uuid: 786ecf4e-1ad1-483d-aa87-a58c5cfd3db1
 langcode: en
 status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.contact_info
-    - field.storage.collection_item.field_job_title
-id: collection_item.contact_info.field_job_title
-field_name: field_job_title
+    - field.storage.collection_item.field_location_detail
+id: collection_item.contact_info.field_location_detail
+field_name: field_location_detail
 entity_type: collection_item
 bundle: contact_info
-label: 'Job Title (or Subhead)'
+label: 'Location Detail'
 description: ''
 required: false
 translatable: false

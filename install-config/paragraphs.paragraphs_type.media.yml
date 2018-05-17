@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: media
-label: Media
+label: 'Media (full-width)'
 icon_uuid: null
 description: 'Full-width captioned media'
 behavior_plugins: {  }

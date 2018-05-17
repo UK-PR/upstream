@@ -9,7 +9,7 @@ id: collection_item.contact_info.field_name_text
 field_name: field_name_text
 entity_type: collection_item
 bundle: contact_info
-label: Name
+label: 'Contact Name (or Office)'
 description: ''
 required: false
 translatable: false

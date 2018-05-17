@@ -1,19 +1,19 @@
-uuid: 0827f725-0cbb-4e31-abc3-b8668707d1e8
+uuid: 8e4acff2-0352-4ed6-819a-2f147a4ca709
 langcode: en
 status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.contact_info
-    - field.storage.collection_item.field_job_title
-id: collection_item.contact_info.field_job_title
-field_name: field_job_title
+    - field.storage.collection_item.field_email
+id: collection_item.contact_info.field_email
+field_name: field_email
 entity_type: collection_item
 bundle: contact_info
-label: 'Job Title (or Subhead)'
+label: Email
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: email

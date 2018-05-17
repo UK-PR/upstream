@@ -1,0 +1,37 @@
+uuid: 99c3a1de-6dd9-4158-af13-8fb1ba1a28a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feed.field_headline_group
+    - field.field.paragraph.feed.field_view
+    - paragraphs.paragraphs_type.feed
+  module:
+    - headline_group
+    - viewfield
+id: paragraph.feed.default
+targetEntityType: paragraph
+bundle: feed
+mode: default
+content:
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: h2
+      headline_group_class: headline-group
+      headline_group_bem: '1'
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+  field_view:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+hidden: {  }

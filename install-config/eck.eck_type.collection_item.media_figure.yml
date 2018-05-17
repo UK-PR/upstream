@@ -4,6 +4,6 @@ status: true
 dependencies:
   config:
     - eck.eck_entity_type.collection_item
-name: 'Media Figure'
+name: Media
 type: media_figure
 description: 'A media item with caption'
