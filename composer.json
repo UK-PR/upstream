@@ -55,6 +55,30 @@
           "type": "zip"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "uk-d8/ukd8",
+        "version": "dev-master",
+        "type": "drupal-theme",
+        "dist": {
+          "url": "https://github.com/uk-d8/theme/archive/master.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "uk-d8/ukd8_customizations",
+        "version": "dev-master",
+        "type": "drupal-module",
+        "dist": {
+          "url": "https://github.com/uk-d8/ukd8_customizations/archive/master.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
