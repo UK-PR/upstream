@@ -7,4 +7,4 @@ label: 'Page Header'
 created: false
 changed: false
 uid: false
-title: false
+title: true

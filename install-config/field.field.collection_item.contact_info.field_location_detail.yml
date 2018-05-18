@@ -10,7 +10,7 @@ field_name: field_location_detail
 entity_type: collection_item
 bundle: contact_info
 label: 'Location Detail'
-description: ''
+description: 'e.g. Building name, Room #'
 required: false
 translatable: false
 default_value: {  }

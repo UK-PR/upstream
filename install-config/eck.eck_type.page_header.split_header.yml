@@ -4,6 +4,6 @@ status: true
 dependencies:
   config:
     - eck.eck_entity_type.page_header
-name: 'Split Header'
+name: 'Split hero'
 type: split_header
 description: 'Hero-style header split between text and image'

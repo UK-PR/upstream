@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.call_to_action
+    - field.field.collection_item.call_to_action.field_button
     - field.field.collection_item.call_to_action.field_description
-    - field.field.collection_item.call_to_action.field_link
   module:
     - link
     - text
@@ -14,6 +14,14 @@ targetEntityType: collection_item
 bundle: call_to_action
 mode: default
 content:
+  field_button:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_description:
     weight: 3
     settings:
@@ -21,14 +29,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  field_link:
-    weight: 4
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   title:
     type: string_textfield

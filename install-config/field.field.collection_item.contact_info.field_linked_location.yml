@@ -11,7 +11,7 @@ id: collection_item.contact_info.field_linked_location
 field_name: field_linked_location
 entity_type: collection_item
 bundle: contact_info
-label: 'Linked Location'
+label: 'Linked Department (or Location)'
 description: ''
 required: false
 translatable: false

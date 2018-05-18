@@ -1,0 +1,19 @@
+uuid: 8ece42b2-1013-4ba2-ac1d-4d32bca5a60c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: page_header.field_secondary_link
+field_name: field_secondary_link
+entity_type: page_header
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

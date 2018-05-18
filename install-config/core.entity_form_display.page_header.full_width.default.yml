@@ -1,0 +1,78 @@
+uuid: e3adf533-b5ea-4303-ba09-d6ed015838d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.full_width
+    - entity_browser.browser.media_browser_modal
+    - field.field.page_header.full_width.field_cta_link
+    - field.field.page_header.full_width.field_headline_group
+    - field.field.page_header.full_width.field_media
+    - field.field.page_header.full_width.field_secondary_link
+    - field.field.page_header.full_width.field_secondary_media
+  module:
+    - entity_browser
+    - entity_reference_widget_helpers
+    - headline_group
+    - link
+id: page_header.full_width.default
+targetEntityType: page_header
+bundle: full_width
+mode: default
+content:
+  field_cta_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_headline_group:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_media:
+    weight: 0
+    settings:
+      entity_browser: media_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: half_width
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: 0
+    type: entity_browser_entity_reference
+    region: content
+  field_secondary_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_secondary_media:
+    weight: 4
+    settings:
+      entity_browser: media_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: 0
+    type: entity_browser_entity_reference
+    region: content
+hidden:
+  title: true

@@ -1,0 +1,41 @@
+uuid: c49d0965-b955-4dc3-8a7a-f6f02b157663
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.text_only
+    - field.field.page_header.text_only.field_cta_link
+    - field.field.page_header.text_only.field_headline_group
+    - field.field.page_header.text_only.field_secondary_link
+  module:
+    - headline_group
+    - link
+id: page_header.text_only.default
+targetEntityType: page_header
+bundle: text_only
+mode: default
+content:
+  field_cta_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_secondary_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  title: true

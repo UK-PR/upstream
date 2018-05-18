@@ -24,6 +24,7 @@ permissions:
   - 'view any collection_item entities'
   - 'view any figure_instance entities'
   - 'view any location entities'
+  - 'view any page_header entities'
   - 'view any paragraphs previewer popup'
   - 'view any quote entities'
   - 'view embederator entity'
