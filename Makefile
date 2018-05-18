@@ -11,6 +11,9 @@ init:
 	git config --global user.name "CI Bot"
 
 install:
+	# clean it out
+	rm -rf vendor web/core web/libraries web/modules/contrib web/themes/contrib
+	# install
 	composer build-assets
 
 clone: init
