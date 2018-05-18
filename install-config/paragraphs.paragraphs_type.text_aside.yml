@@ -1,9 +1,0 @@
-uuid: 02545cf5-1d50-4231-ab66-bb9b47ffba97
-langcode: en
-status: true
-dependencies: {  }
-id: text_aside
-label: 'Text + Media'
-icon_uuid: null
-description: 'Text with a fixed floating image. For use when the Body paragraph inline media cannot accommodate extra figure details'
-behavior_plugins: {  }

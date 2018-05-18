@@ -1,9 +1,0 @@
-uuid: 504ad30f-5fe9-4ec4-893f-c9bf402a589b
-langcode: en
-status: true
-dependencies: {  }
-id: call_to_action
-label: 'Call to Action'
-icon_uuid: null
-description: 'Calling out a single link'
-behavior_plugins: {  }

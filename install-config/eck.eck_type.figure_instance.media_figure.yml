@@ -1,9 +1,0 @@
-uuid: 47afcdd7-d50b-41e0-8c81-77361fe05cd4
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.figure_instance
-name: 'Media Figure'
-type: media_figure
-description: 'A figure that adds more detail than a regular inline embed'

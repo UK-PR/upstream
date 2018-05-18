@@ -1,9 +1,0 @@
-uuid: 7d807ca0-2b05-4cb2-a585-147e78b1a53e
-langcode: en
-status: true
-dependencies: {  }
-id: pullquote
-label: Pullquote
-icon_uuid: null
-description: 'Quotation by an arbitrary person, or a Person defined as a node'
-behavior_plugins: {  }
