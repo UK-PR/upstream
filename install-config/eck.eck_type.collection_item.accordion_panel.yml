@@ -1,0 +1,9 @@
+uuid: eeefeb07-120a-4a63-a0b4-462b1685d7bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+name: 'Accordion Panel'
+type: accordion_panel
+description: 'Titled content within a zipper/accordion'
