@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_byline
     - field.field.node.news.field_categories
+    - field.field.node.news.field_header_style
     - field.field.node.news.field_headline_group
     - field.field.node.news.field_media
     - field.field.node.news.field_paragraphs
@@ -76,4 +77,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_header_style: true

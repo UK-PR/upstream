@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_byline
     - field.field.node.news.field_categories
+    - field.field.node.news.field_header_style
     - field.field.node.news.field_headline_group
     - field.field.node.news.field_media
     - field.field.node.news.field_paragraphs
@@ -53,6 +54,7 @@ third_party_settings:
       label: 'News Article Details'
     group_body_content:
       children:
+        - field_header_style
         - field_media
         - body
         - field_paragraphs
@@ -73,7 +75,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 28
     settings:
       rows: 9
       placeholder: ''
@@ -104,6 +106,12 @@ content:
         collection_link: '1'
     type: chosen_select
     region: content
+  field_header_style:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: chosen_select
+    region: content
   field_headline_group:
     weight: 2
     settings: {  }
@@ -111,7 +119,7 @@ content:
     type: headline_complete
     region: content
   field_media:
-    weight: 2
+    weight: 27
     settings:
       entity_browser: media_browser_modal
       field_widget_display: rendered_entity
@@ -127,7 +135,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_paragraphs:
-    weight: 4
+    weight: 29
     settings:
       title: Paragraph
       title_plural: Paragraphs
