@@ -5,18 +5,34 @@ dependencies:
   config:
     - field.field.paragraph.statistics.field_collection_items
     - field.field.paragraph.statistics.field_headline_group
+    - field.field.paragraph.statistics.field_theme_color_scheme
+    - field.field.paragraph.statistics.field_theme_show_divisions
     - paragraphs.paragraphs_type.statistics
   module:
     - entity_reference_widget_helpers
+    - field_group
     - headline_group
     - inline_entity_form
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_theme_color_scheme
+        - field_theme_show_divisions
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
 id: paragraph.statistics.default
 targetEntityType: paragraph
 bundle: statistics
 mode: default
 content:
   field_collection_items:
-    weight: 1
+    weight: 2
     settings:
       form_mode: default
       override_labels: true
@@ -25,6 +41,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_reference_widget_helpers:
         use_dropdown: '1'
@@ -33,10 +52,23 @@ content:
     type: inline_entity_form_complex
     region: content
   field_headline_group:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: headline_complete
+    region: content
+  field_theme_color_scheme:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_theme_show_divisions:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
 hidden:
   created: true

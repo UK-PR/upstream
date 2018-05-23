@@ -10,18 +10,32 @@ dependencies:
     - field.field.page_header.full_width.field_media
     - field.field.page_header.full_width.field_secondary_link
     - field.field.page_header.full_width.field_secondary_media
+    - field.field.page_header.full_width.field_theme_color_scheme
   module:
     - entity_browser
     - entity_reference_widget_helpers
+    - field_group
     - headline_group
     - link
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_theme_color_scheme
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
 id: page_header.full_width.default
 targetEntityType: page_header
 bundle: full_width
 mode: default
 content:
   field_cta_link:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -29,13 +43,13 @@ content:
     type: link_default
     region: content
   field_headline_group:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: headline_complete
     region: content
   field_media:
-    weight: 0
+    weight: 1
     settings:
       entity_browser: media_browser_modal
       field_widget_display: rendered_entity
@@ -51,7 +65,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_secondary_link:
-    weight: 3
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -59,7 +73,7 @@ content:
     type: link_default
     region: content
   field_secondary_media:
-    weight: 4
+    weight: 5
     settings:
       entity_browser: media_browser_modal
       field_widget_display: rendered_entity
@@ -73,6 +87,12 @@ content:
       entity_reference_widget_helpers:
         collection_link: 0
     type: entity_browser_entity_reference
+    region: content
+  field_theme_color_scheme:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   title: true

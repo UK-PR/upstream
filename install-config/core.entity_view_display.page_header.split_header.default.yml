@@ -8,6 +8,7 @@ dependencies:
     - field.field.page_header.split_header.field_headline_group
     - field.field.page_header.split_header.field_media
     - field.field.page_header.split_header.field_secondary_link
+    - field.field.page_header.split_header.field_theme_color_scheme
   module:
     - headline_group
     - link
@@ -60,4 +61,5 @@ content:
     type: link
     region: content
 hidden:
+  field_theme_color_scheme: true
   title: true

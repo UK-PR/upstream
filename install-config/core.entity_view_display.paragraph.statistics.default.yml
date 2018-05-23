@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.statistics.field_collection_items
     - field.field.paragraph.statistics.field_headline_group
+    - field.field.paragraph.statistics.field_theme_color_scheme
+    - field.field.paragraph.statistics.field_theme_show_divisions
     - paragraphs.paragraphs_type.statistics
   module:
     - headline_group
@@ -32,4 +34,6 @@ content:
     third_party_settings: {  }
     type: headline_default
     region: content
-hidden: {  }
+hidden:
+  field_theme_color_scheme: true
+  field_theme_show_divisions: true

@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.collection_item.call_to_action
     - field.field.collection_item.call_to_action.field_button
     - field.field.collection_item.call_to_action.field_description
+    - field.field.collection_item.call_to_action.field_theme_color_scheme
   module:
     - link
     - text
@@ -15,7 +16,7 @@ bundle: call_to_action
 mode: default
 content:
   field_button:
-    weight: -3
+    weight: 2
     label: above
     settings:
       trim_length: 80
@@ -27,7 +28,7 @@ content:
     type: link
     region: content
   field_description:
-    weight: -4
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -36,9 +37,10 @@ content:
   title:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_theme_color_scheme: true

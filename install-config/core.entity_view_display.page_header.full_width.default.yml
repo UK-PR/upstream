@@ -9,6 +9,7 @@ dependencies:
     - field.field.page_header.full_width.field_media
     - field.field.page_header.full_width.field_secondary_link
     - field.field.page_header.full_width.field_secondary_media
+    - field.field.page_header.full_width.field_theme_color_scheme
   module:
     - headline_group
     - link
@@ -70,4 +71,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_theme_color_scheme: true
   title: true

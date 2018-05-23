@@ -7,16 +7,30 @@ dependencies:
     - field.field.page_header.text_only.field_cta_link
     - field.field.page_header.text_only.field_headline_group
     - field.field.page_header.text_only.field_secondary_link
+    - field.field.page_header.text_only.field_theme_color_scheme
   module:
+    - field_group
     - headline_group
     - link
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_theme_color_scheme
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
 id: page_header.text_only.default
 targetEntityType: page_header
 bundle: text_only
 mode: default
 content:
   field_cta_link:
-    weight: 1
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -24,18 +38,24 @@ content:
     type: link_default
     region: content
   field_headline_group:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: headline_complete
     region: content
   field_secondary_link:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_theme_color_scheme:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   title: true

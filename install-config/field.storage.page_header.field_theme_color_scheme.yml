@@ -1,0 +1,30 @@
+uuid: f674d90f-e8bf-42be-b880-c764bfe966de
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: page_header.field_theme_color_scheme
+field_name: field_theme_color_scheme
+entity_type: page_header
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: light
+      label: Light
+    -
+      value: dark
+      label: Dark
+    -
+      value: wildcat
+      label: 'Wildcat blue'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

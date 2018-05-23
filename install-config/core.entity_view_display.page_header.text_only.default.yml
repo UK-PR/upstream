@@ -7,6 +7,7 @@ dependencies:
     - field.field.page_header.text_only.field_cta_link
     - field.field.page_header.text_only.field_headline_group
     - field.field.page_header.text_only.field_secondary_link
+    - field.field.page_header.text_only.field_theme_color_scheme
   module:
     - headline_group
     - link
@@ -50,4 +51,5 @@ content:
     type: link
     region: content
 hidden:
+  field_theme_color_scheme: true
   title: true

@@ -1,0 +1,23 @@
+uuid: 6649c484-c76f-4672-ba32-fbadf987e308
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_theme_show_divisions
+    - paragraphs.paragraphs_type.statistics
+id: paragraph.statistics.field_theme_show_divisions
+field_name: field_theme_show_divisions
+entity_type: paragraph
+bundle: statistics
+label: 'Show divisions'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
