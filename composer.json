@@ -133,6 +133,7 @@
     "webflo/drupal-core-strict": "8.5.3",
     "drupal/viewfield": "^3.0@alpha",
     "drupal/headline_group": "1.x-dev",
+    "drupal/field_group_settings": "1.x-dev",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
