@@ -23,28 +23,40 @@ settings:
     negate: 1
     target_bundles: null
     target_bundles_drag_drop:
+      2_1_slab:
+        weight: -25
+        enabled: false
+      flex_grid:
+        weight: -24
+        enabled: false
       body:
-        weight: 9
+        weight: -23
         enabled: false
-      call_to_action:
-        weight: 10
+      calls_to_action:
+        weight: -22
         enabled: false
-      contact_info:
-        weight: 11
+      carousel:
+        weight: -21
         enabled: false
-      link_collection:
-        weight: 12
+      custom_teasers:
+        weight: -20
         enabled: false
-      pullquote:
-        weight: 13
+      feed:
+        weight: -19
         enabled: false
-      social_media_links:
-        weight: 14
+      gallery:
+        weight: -18
+        enabled: false
+      link_lists:
+        weight: -17
+        enabled: false
+      media:
+        weight: -16
         enabled: false
       statistics:
-        weight: 15
+        weight: -15
         enabled: false
-      text_aside:
-        weight: 16
+      zipper:
+        weight: -14
         enabled: false
 field_type: entity_reference_revisions

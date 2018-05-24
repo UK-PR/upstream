@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.page.field_metatags
     - field.field.node.page.field_page_header
     - field.field.node.page.field_paragraphs
-    - field.field.node.page.field_parent
     - node.type.page
   module:
     - entity_browser_entity_form
@@ -67,15 +66,6 @@ content:
         show_paragraph_description: '1'
       paragraphs_previewer_popup:
         enable: '1'
-    region: content
-  field_parent:
-    weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   path:
     type: path

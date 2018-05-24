@@ -134,6 +134,7 @@
     "drupal/viewfield": "^3.0@alpha",
     "drupal/headline_group": "1.x-dev",
     "drupal/field_group_settings": "1.x-dev",
+    "drupal/menu_block": "^1.5",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },

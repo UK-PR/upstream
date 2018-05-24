@@ -6,3 +6,12 @@ use_menu_title_as_fallback: false
 remove_repeated_segments: true
 _core:
   default_config_hash: MymgTM4i959vZLJ3F-hpn_ntX-johso5eQqRm-03r0Y
+include_invalid_paths: true
+excluded_paths: ''
+replaced_titles: ''
+segments_separator: null
+home_segment_keep: 0
+title_segment_as_link: false
+title_from_page_when_available: true
+absolute_paths: false
+hide_single_home_item: false
