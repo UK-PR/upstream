@@ -1,6 +1,6 @@
 uuid: 5589a874-4583-4df4-9c90-430c99118a37
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - ukd8
@@ -9,7 +9,7 @@ _core:
 id: ukd8_local_actions
 theme: ukd8
 region: content
-weight: -7
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:
