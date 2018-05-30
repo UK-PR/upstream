@@ -123,7 +123,6 @@
     "drupal/pathauto": "^1.0",
     "drupal/redirect": "^1.0",
     "drupal/redis": "^1.0",
-    "drupal/simple_gmap": "^1.4",
     "drupal/video_embed_field": "^2.0",
     "drupal/webform": "^5.0",
     "drupal/xmlsitemap": "^1.0",
