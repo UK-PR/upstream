@@ -1,0 +1,9 @@
+uuid: 90938bd5-409b-488a-9d5e-7e69250d531b
+langcode: en
+status: true
+dependencies: {  }
+id: content_suffix
+label: 'Content Suffix'
+logic: and
+conditions: {  }
+allow_other_conditions: false

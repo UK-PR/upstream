@@ -1,0 +1,20 @@
+uuid: d1f4fd1a-e787-48e7-9879-d18c3627dbe1
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: sidenav
+label: Sidenav
+logic: and
+conditions:
+  01c462c9-c298-4f72-b981-b6e12837f9ce:
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 01c462c9-c298-4f72-b981-b6e12837f9ce
+allow_other_conditions: false

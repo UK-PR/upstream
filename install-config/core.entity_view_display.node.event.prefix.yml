@@ -1,0 +1,75 @@
+uuid: f39e4c1e-ad04-45ab-9a91-fbd5a1068309
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.prefix
+    - field.field.node.event.body
+    - field.field.node.event.field_categories
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_header_style
+    - field.field.node.event.field_headline_group
+    - field.field.node.event.field_location
+    - field.field.node.event.field_media
+    - field.field.node.event.field_paragraphs
+    - node.type.event
+  module:
+    - datetime_range
+    - headline_group
+    - user
+id: node.event.prefix
+targetEntityType: node
+bundle: event
+mode: prefix
+content:
+  field_categories:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dates:
+    weight: 2
+    label: hidden
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_headline_group:
+    type: headline_default
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      headline_group_tag: div
+      headline_group_class: headline-group
+      headline_group_bem: true
+    third_party_settings: {  }
+  field_location:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_media:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  body: true
+  field_header_style: true
+  field_paragraphs: true
+  links: true

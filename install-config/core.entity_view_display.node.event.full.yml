@@ -1,0 +1,52 @@
+uuid: ad537bd0-1259-4c91-a2d9-6d4ce7843543
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.body
+    - field.field.node.event.field_categories
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_header_style
+    - field.field.node.event.field_headline_group
+    - field.field.node.event.field_location
+    - field.field.node.event.field_media
+    - field.field.node.event.field_paragraphs
+    - node.type.event
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragraphs:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_categories: true
+  field_dates: true
+  field_header_style: true
+  field_headline_group: true
+  field_location: true
+  field_media: true

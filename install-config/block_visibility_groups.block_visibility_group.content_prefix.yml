@@ -1,0 +1,20 @@
+uuid: 77f46128-ae12-4cfa-8c8d-9295a5c2f2de
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: content_prefix
+label: 'Content Prefix'
+logic: and
+conditions:
+  968c9322-276c-4db8-b5e5-c169883e5b39:
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 968c9322-276c-4db8-b5e5-c169883e5b39
+allow_other_conditions: false

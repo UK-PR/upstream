@@ -1,8 +1,9 @@
 uuid: 203aa454-4495-448d-b67b-b039c58d1444
 langcode: en
-status: false
+status: true
 dependencies:
   config:
+    - block_visibility_groups.block_visibility_group.sidenav
     - system.menu.main
   module:
     - block_visibility_groups
@@ -29,5 +30,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: ''
+    block_visibility_group: sidenav
     context_mapping: {  }
