@@ -14,6 +14,7 @@ install:
 	# clean it out
 	rm -rf vendor web/core web/libraries web/modules/contrib web/themes/contrib
 	# install
+	export COMPOSER_PROCESS_TIMEOUT=600
 	composer build-assets
 
 clone: init
