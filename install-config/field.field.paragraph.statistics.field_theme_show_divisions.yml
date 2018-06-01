@@ -1,23 +1,21 @@
-uuid: 6649c484-c76f-4672-ba32-fbadf987e308
+uuid: 15559361-30ae-4425-b5b2-25ad429e1dc2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_theme_show_divisions
     - paragraphs.paragraphs_type.statistics
+  module:
+    - options
 id: paragraph.statistics.field_theme_show_divisions
 field_name: field_theme_show_divisions
 entity_type: paragraph
 bundle: statistics
 label: 'Show divisions'
-description: ''
+description: 'Divide statistic collections with separators'
 required: false
 translatable: false
-default_value:
-  -
-    value: 0
+default_value: {  }
 default_value_callback: ''
-settings:
-  on_label: 'On'
-  off_label: 'Off'
-field_type: boolean
+settings: {  }
+field_type: list_string

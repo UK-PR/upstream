@@ -1,12 +1,12 @@
-uuid: 0fa3d2aa-ba8e-4c34-8c16-45753ac784e1
+uuid: cc7e1c61-4cda-425e-9b54-73699660daa4
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_theme_show_divisions
-field_name: field_theme_show_divisions
+id: paragraph.field_theme_carousel_centered
+field_name: field_theme_carousel_centered
 entity_type: paragraph
 type: list_string
 settings:

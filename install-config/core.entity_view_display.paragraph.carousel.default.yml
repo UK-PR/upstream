@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.carousel.field_body
     - field.field.paragraph.carousel.field_collection_items
     - field.field.paragraph.carousel.field_headline_group
+    - field.field.paragraph.carousel.field_theme_carousel_centered
+    - field.field.paragraph.carousel.field_theme_color_scheme
     - paragraphs.paragraphs_type.carousel
   module:
     - headline_group
@@ -41,4 +43,6 @@ content:
     third_party_settings: {  }
     type: headline_default
     region: content
-hidden: {  }
+hidden:
+  field_theme_carousel_centered: true
+  field_theme_color_scheme: true

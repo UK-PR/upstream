@@ -1,0 +1,21 @@
+uuid: a6d34aad-c2ee-4c3f-81f5-6c09c5ae8d88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_theme_color_scheme
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - options
+id: paragraph.carousel.field_theme_color_scheme
+field_name: field_theme_color_scheme
+entity_type: paragraph
+bundle: carousel
+label: 'Color scheme'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
