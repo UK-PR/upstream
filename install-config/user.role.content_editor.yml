@@ -18,6 +18,7 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'add embederator entity'
+  - 'administer menu'
   - 'administer meta tags'
   - 'administer redirect settings'
   - 'administer redirects'

@@ -13,6 +13,7 @@ conditions:
     bundles:
       event: event
       news: news
+      person: person
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

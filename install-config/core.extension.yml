@@ -52,6 +52,7 @@ module:
   kint: 0
   link: 0
   linkit: 0
+  masquerade: 0
   media: 0
   menu_block: 0
   menu_ui: 0

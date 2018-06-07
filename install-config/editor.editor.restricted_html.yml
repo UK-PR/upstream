@@ -39,13 +39,13 @@ settings:
           items:
             - Source
   plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
     drupallink:
       linkit_enabled: true
       linkit_profile: default
+    stylescombo:
+      styles: "p.intro|Intro text\r\na.link--fancy|Fancy link"
+    language:
+      language_list: un
 image_upload:
   status: false
   scheme: public

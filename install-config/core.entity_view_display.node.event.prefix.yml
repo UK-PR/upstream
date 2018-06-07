@@ -46,9 +46,9 @@ content:
     region: content
     label: hidden
     settings:
-      headline_group_tag: div
+      headline_group_tag: h1
       headline_group_class: headline-group
-      headline_group_bem: true
+      headline_group_bem: '1'
     third_party_settings: {  }
   field_location:
     weight: 4

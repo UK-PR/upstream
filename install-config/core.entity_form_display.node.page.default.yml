@@ -42,6 +42,9 @@ content:
       match_operator: CONTAINS
       override_labels: false
       allow_existing: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
