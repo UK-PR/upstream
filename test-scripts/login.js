@@ -14,10 +14,10 @@ test.after(t => {
   browser.close();
 });
 
-test.serial('homepage loads', async t => {
-    let response = await page.goto('http://localhost/');
-    t.true(response.ok());
-});
+// test.serial('homepage loads', async t => {
+//     let response = await page.goto('http://localhost/');
+//     t.true(response.ok());
+// });
 
 test.serial('login', async t => {
     await page.goto('http://localhost/user');
