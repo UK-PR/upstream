@@ -1,0 +1,33 @@
+uuid: e0fa57a2-8ff9-45b0-a6ff-c7afb884f207
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.news
+  content:
+    - 'block_content:design_block_reference:d26ac98e-248c-4da6-90e2-4c7c3558ecf0'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - ukd8
+id: newsmediacontact
+theme: ukd8
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:d26ac98e-248c-4da6-90e2-4c7c3558ecf0'
+settings:
+  id: 'block_content:d26ac98e-248c-4da6-90e2-4c7c3558ecf0'
+  label: 'News Media Contact'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: news
+    context_mapping: {  }

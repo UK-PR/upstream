@@ -1,0 +1,20 @@
+uuid: 624d4b5b-556b-4942-b4e8-e934a0a8b24c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - eck
+id: block_content.field_collection_item
+field_name: field_collection_item
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: collection_item
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
