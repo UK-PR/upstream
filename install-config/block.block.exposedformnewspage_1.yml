@@ -20,8 +20,8 @@ settings:
   id: 'views_exposed_filter_block:news-page_1'
   label: ''
   provider: views
-  label_display: '0'
-  views_label: ''
+  label_display: visible
+  views_label: 'Filter News'
 visibility:
   condition_group:
     id: condition_group
