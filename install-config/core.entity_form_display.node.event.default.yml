@@ -5,6 +5,7 @@ dependencies:
   config:
     - entity_browser.browser.media_browser_modal
     - field.field.node.event.body
+    - field.field.node.event.field_all_day
     - field.field.node.event.field_categories
     - field.field.node.event.field_dates
     - field.field.node.event.field_header_style
@@ -45,6 +46,7 @@ third_party_settings:
       children:
         - field_headline_group
         - field_dates
+        - field_all_day
         - field_categories
         - field_location
       parent_name: group_tabs
@@ -95,8 +97,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_categories:
+  field_all_day:
     weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_categories:
+    weight: 5
     settings: {  }
     third_party_settings:
       entity_reference_widget_helpers:
@@ -122,7 +131,7 @@ content:
     type: headline_complete
     region: content
   field_location:
-    weight: 5
+    weight: 6
     settings:
       form_mode: default
       override_labels: true
@@ -131,6 +140,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
@@ -151,6 +163,7 @@ content:
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: half_width
+      field_widget_replace: false
     third_party_settings:
       entity_reference_widget_helpers:
         collection_link: 0

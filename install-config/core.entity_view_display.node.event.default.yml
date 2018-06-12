@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_all_day
     - field.field.node.event.field_categories
     - field.field.node.event.field_dates
     - field.field.node.event.field_header_style
@@ -91,4 +92,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_all_day: true
   field_header_style: true
