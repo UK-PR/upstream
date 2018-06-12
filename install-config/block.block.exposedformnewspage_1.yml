@@ -1,0 +1,30 @@
+uuid: f2edbf9f-94aa-453e-8ee7-69841dfd732e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.news_landing
+    - views.view.news
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - ukd8
+id: exposedformnewspage_1
+theme: ukd8
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:news-page_1'
+settings:
+  id: 'views_exposed_filter_block:news-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: news_landing
+    context_mapping: {  }
