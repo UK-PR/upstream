@@ -222,7 +222,8 @@
     },
     "patches": {
       "drupal/core": {
-        "datetime views integration": "https://www.drupal.org/files/issues/2786577-270_0.patch#will-be-fixed-in-8.6"
+        "datetime views integration": "https://www.drupal.org/files/issues/2786577-270_0.patch#will-be-fixed-in-8.6",
+        "titles for views filter blocks": "https://www.drupal.org/files/issues/2720101-43.patch"
       },
       "drupal/devel": {
         "limit kint levels": "https://gist.githubusercontent.com/ahebrank/b201f88201bf036e65067988b50dc2c3/raw/254f1c68054db34ef0a8108fe7ec7ba3b7fb63da/kint_limit_max_levels.patch"
