@@ -45,6 +45,7 @@ permissions:
   - 'edit own hosted_video media'
   - 'edit own image media'
   - 'edit own video media'
+  - 'hide format selection for paragraph'
   - 'override news authored on option'
   - 'update any media'
   - 'update media'

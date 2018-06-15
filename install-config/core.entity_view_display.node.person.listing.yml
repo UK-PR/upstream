@@ -12,11 +12,13 @@ dependencies:
     - field.field.node.person.field_location_text
     - field.field.node.person.field_media
     - field.field.node.person.field_name
+    - field.field.node.person.field_paragraphs
     - field.field.node.person.field_phone
     - field.field.node.person.field_preferred_name
     - node.type.person
   module:
     - name
+    - telephone
     - user
 id: node.person.listing
 targetEntityType: node
@@ -32,7 +34,7 @@ content:
     type: entity_reference_label
     region: content
   field_email:
-    weight: 6
+    weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -80,13 +82,13 @@ content:
       multiple_el_al_first: '1'
     third_party_settings: {  }
   field_phone:
-    weight: 7
+    type: telephone_link
+    weight: 6
+    region: content
     label: hidden
     settings:
-      link_to_entity: false
+      title: ''
     third_party_settings: {  }
-    type: string
-    region: content
   field_preferred_name:
     type: string
     weight: 1
@@ -98,4 +100,5 @@ content:
 hidden:
   body: true
   field_large_image: true
+  field_paragraphs: true
   links: true

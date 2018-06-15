@@ -12,7 +12,7 @@ dependencies:
     - field.field.node.person.field_location_text
     - field.field.node.person.field_media
     - field.field.node.person.field_name
-    - field.field.node.person.field_phone
+    - field.field.node.person.field_paragraphs
     - field.field.node.person.field_preferred_name
     - node.type.person
   module:
@@ -78,5 +78,5 @@ hidden:
   field_categories: true
   field_email: true
   field_location_text: true
-  field_phone: true
+  field_paragraphs: true
   links: true

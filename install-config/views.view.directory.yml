@@ -151,6 +151,20 @@ display:
           error_message: true
           plugin_id: taxonomy_index_tid
       sorts:
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
         field_name_family:
           id: field_name_family
           table: node__field_name

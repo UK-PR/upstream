@@ -1,0 +1,62 @@
+uuid: e5029e48-3c72-45a8-a6ef-9bd2bf3173d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.person
+  module:
+    - entity_reference_revisions
+id: node.person.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: person
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      2_1_slab:
+        weight: -25
+        enabled: false
+      flex_grid:
+        weight: -24
+        enabled: false
+      body:
+        weight: -23
+        enabled: false
+      calls_to_action:
+        weight: -22
+        enabled: false
+      carousel:
+        weight: -21
+        enabled: false
+      custom_teasers:
+        weight: -20
+        enabled: false
+      feed:
+        weight: -19
+        enabled: false
+      gallery:
+        weight: -18
+        enabled: false
+      link_lists:
+        weight: -17
+        enabled: false
+      media:
+        weight: -16
+        enabled: false
+      statistics:
+        weight: -15
+        enabled: false
+      zipper:
+        weight: -14
+        enabled: false
+field_type: entity_reference_revisions
