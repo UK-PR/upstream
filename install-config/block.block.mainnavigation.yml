@@ -12,8 +12,8 @@ dependencies:
     - ukd8
 id: mainnavigation
 theme: ukd8
-region: sidebar
-weight: 0
+region: section_nav
+weight: -9
 provider: null
 plugin: 'menu_block:main'
 settings:

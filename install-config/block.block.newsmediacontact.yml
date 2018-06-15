@@ -14,7 +14,7 @@ dependencies:
 id: newsmediacontact
 theme: ukd8
 region: sidebar
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:d26ac98e-248c-4da6-90e2-4c7c3558ecf0'
 settings:
