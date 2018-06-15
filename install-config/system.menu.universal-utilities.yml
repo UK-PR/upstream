@@ -1,0 +1,8 @@
+uuid: ec309ef2-82a0-42c0-a808-c3c451b3a8bf
+langcode: en
+status: true
+dependencies: {  }
+id: universal-utilities
+label: 'Universal utilities'
+description: 'Additional links in the universal header'
+locked: false

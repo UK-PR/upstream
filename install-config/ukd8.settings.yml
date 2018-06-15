@@ -1,0 +1,25 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+is_main: 0
+lockup_wordmark_1: 'Department of'
+lockup_wordmark_2: Mysteries
+uky_home_url: 'http://www.uky.edu/'
+college_url: 'https://insidenewcity.com'
+college_title: 'Department of Website Construction'
+full_width_hero_schema: default
+split_hero_schema: default
+text_only_schema: default
+call_to_action_schema: default
+pullquote_schema: default
+social_media_schema: default
+statistic_schema: default
+carousel_schema: default
+divide_statistics: 0
+center_carousel: 0

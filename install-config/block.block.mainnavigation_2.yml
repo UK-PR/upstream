@@ -1,24 +1,23 @@
-uuid: 203aa454-4495-448d-b67b-b039c58d1444
+uuid: 11587620-50c0-47a0-a992-289437dc33b0
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.sidenav
     - system.menu.main
   module:
     - block_visibility_groups
     - menu_block
   theme:
     - ukd8
-id: mainnavigation
+id: mainnavigation_2
 theme: ukd8
-region: sidebar
-weight: -9
+region: mobile_tab_section
+weight: 0
 provider: null
 plugin: 'menu_block:main'
 settings:
   id: 'menu_block:main'
-  label: 'Section navigation'
+  label: 'Section navigation (mobile)'
   provider: menu_block
   label_display: '0'
   level: 2
@@ -30,5 +29,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: sidenav
+    block_visibility_group: ''
     context_mapping: {  }
