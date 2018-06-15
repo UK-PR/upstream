@@ -1,2 +1,0 @@
-.git
-ukd8.settings.yml
