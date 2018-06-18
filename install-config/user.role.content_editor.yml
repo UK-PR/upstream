@@ -10,7 +10,6 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access frontback'
-  - 'access in-place editing'
   - 'access media overview'
   - 'access media_browser_iframe entity browser pages'
   - 'access media_browser_modal entity browser pages'

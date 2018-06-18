@@ -16,8 +16,8 @@ name: browse_files_modal
 label: 'Browser for files (modal)'
 display: modal
 display_configuration:
-  width: '1100'
-  height: '650'
+  width: ''
+  height: ''
   link_text: 'Select files'
   auto_open: false
 selection_display: multi_step_display

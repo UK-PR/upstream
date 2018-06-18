@@ -24,7 +24,7 @@ settings:
     middle: 20
     family: 20
     generational: 5
-    credentials: 35
+    credentials: 5
   title_display:
     title: description
     given: description
@@ -49,6 +49,6 @@ settings:
   component_css: ''
   component_layout: default
   show_component_required_marker: false
-  credentials_inline: false
+  credentials_inline: true
   override_format: default
 field_type: name
