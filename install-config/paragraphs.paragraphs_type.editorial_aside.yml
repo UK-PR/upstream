@@ -1,0 +1,9 @@
+uuid: 9bef4993-1b6f-44ba-87c4-ca74c227218a
+langcode: en
+status: true
+dependencies: {  }
+id: editorial_aside
+label: 'Editorial Aside'
+icon_uuid: null
+description: 'Content with a floated aside'
+behavior_plugins: {  }

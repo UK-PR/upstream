@@ -229,7 +229,8 @@
         "limit kint levels": "https://gist.githubusercontent.com/ahebrank/b201f88201bf036e65067988b50dc2c3/raw/254f1c68054db34ef0a8108fe7ec7ba3b7fb63da/kint_limit_max_levels.patch"
       },
       "drupal/linkit": {
-        "linkit for link fields": "https://www.drupal.org/files/issues/linkit_for_link_field-2712951-42.patch"
+        "linkit for link fields": "https://www.drupal.org/files/issues/2018-05-09/2712951-67.patch",
+        "simple matcher patch": "https://www.drupal.org/files/issues/2018-06-20/fix-non-entity-path.interdiff.patch"
       },
       "drupal/auto_entitylabel": {
         "don't use entity provider name": "https://www.drupal.org/files/issues/auto_entitylabel-2923876-7-Broken-when-provider-entityId.patch"

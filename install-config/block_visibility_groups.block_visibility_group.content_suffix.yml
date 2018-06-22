@@ -1,9 +1,19 @@
 uuid: 90938bd5-409b-488a-9d5e-7e69250d531b
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - node
 id: content_suffix
 label: 'Content Suffix'
 logic: and
-conditions: {  }
+conditions:
+  4f6c26ff-b8c7-47dc-9e2a-b4d7ea7c0463:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 4f6c26ff-b8c7-47dc-9e2a-b4d7ea7c0463
 allow_other_conditions: false

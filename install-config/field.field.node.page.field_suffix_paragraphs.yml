@@ -1,18 +1,17 @@
-uuid: 54c41d1a-583e-4b93-a74f-b502ad548811
+uuid: 5c15f12c-9818-477f-90a9-48e328aee2f2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraphs
+    - field.storage.node.field_suffix_paragraphs
     - node.type.page
-    - paragraphs.paragraphs_type.2_1_slab
   module:
     - entity_reference_revisions
-id: node.page.field_paragraphs
-field_name: field_paragraphs
+id: node.page.field_suffix_paragraphs
+field_name: field_suffix_paragraphs
 entity_type: node
 bundle: page
-label: Paragraphs
+label: 'Suffix Paragraphs'
 description: ''
 required: false
 translatable: false
@@ -21,44 +20,43 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 1
-    target_bundles:
-      2_1_slab: 2_1_slab
+    negate: 0
+    target_bundles: null
     target_bundles_drag_drop:
       2_1_slab:
-        enabled: true
-        weight: -25
-      flex_grid:
-        weight: -24
+        weight: 13
         enabled: false
       body:
-        weight: -23
+        weight: 14
         enabled: false
       calls_to_action:
-        weight: -22
+        weight: 15
         enabled: false
       carousel:
-        weight: -21
+        weight: 16
         enabled: false
       custom_teasers:
-        weight: -20
+        weight: 17
         enabled: false
       feed:
-        weight: -19
+        weight: 18
+        enabled: false
+      flex_grid:
+        weight: 19
         enabled: false
       gallery:
-        weight: -18
+        weight: 20
         enabled: false
       link_lists:
-        weight: -17
+        weight: 21
         enabled: false
       media:
-        weight: -16
+        weight: 22
         enabled: false
       statistics:
-        weight: -15
+        weight: 23
         enabled: false
       zipper:
-        weight: -14
+        weight: 24
         enabled: false
 field_type: entity_reference_revisions

@@ -1,8 +1,9 @@
-uuid: cce0f598-7929-462c-ad01-dfac754f349f
+uuid: 8ba3f9f1-04b7-4244-9e34-f528e6cbf3a2
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.suffix
     - field.field.node.page.field_metatags
     - field.field.node.page.field_page_header
     - field.field.node.page.field_paragraphs
@@ -12,27 +13,23 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
-id: node.page.default
+id: node.page.suffix
 targetEntityType: node
 bundle: page
-mode: default
+mode: suffix
 content:
-  field_paragraphs:
+  field_suffix_paragraphs:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 0
+    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_metatags: true
   field_page_header: true
+  field_paragraphs: true
   field_prefix_paragraphs: true
-  field_suffix_paragraphs: true
+  links: true

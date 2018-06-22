@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.page.field_metatags
     - field.field.node.page.field_page_header
     - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_prefix_paragraphs
+    - field.field.node.page.field_suffix_paragraphs
     - node.type.page
   module:
     - entity_browser_entity_form
@@ -22,18 +24,18 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_metatags:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_page_header:
-    weight: 2
+    weight: 1
     settings:
       form_mode: default
       label_singular: ''
@@ -70,9 +72,41 @@ content:
       paragraphs_previewer_popup:
         enable: '1'
     region: content
+  field_prefix_paragraphs:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings:
+      entity_reference_widget_helpers:
+        show_paragraph_description: '1'
+      paragraphs_previewer_popup:
+        enable: '1'
+    region: content
+  field_suffix_paragraphs:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings:
+      entity_reference_widget_helpers:
+        show_paragraph_description: '1'
+      paragraphs_previewer_popup:
+        enable: '1'
+    region: content
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -80,7 +114,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
@@ -93,7 +127,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -101,7 +135,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -11,8 +11,7 @@ conditions:
   01c462c9-c298-4f72-b981-b6e12837f9ce:
     id: 'entity_bundle:node'
     bundles:
-      event: event
-      news: news
+      page: page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
