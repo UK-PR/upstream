@@ -17,6 +17,7 @@ dependencies:
     - node.type.person
   module:
     - entity_reference_revisions
+    - name
     - telephone
     - text
     - user
@@ -28,12 +29,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 6
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     region: content
   field_categories:
-    weight: 2
+    weight: 6
     label: above
     settings:
       link: true
@@ -41,14 +42,31 @@ content:
     type: entity_reference_label
     region: content
   field_email:
-    weight: 5
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
     type: email_mailto
     region: content
+  field_job_title:
+    type: string
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_large_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: full_width
+      link: false
+    third_party_settings: {  }
   field_location_text:
-    weight: 3
+    weight: 7
     label: above
     settings:
       link_to_entity: false
@@ -57,15 +75,31 @@ content:
     region: content
   field_media:
     type: entity_reference_entity_view
-    weight: 1
+    weight: 2
     region: content
     label: hidden
     settings:
       view_mode: square
       link: false
     third_party_settings: {  }
+  field_name:
+    type: name_default
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      format: full
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+      markup: false
+    third_party_settings: {  }
   field_paragraphs:
-    weight: 7
+    weight: 11
     label: hidden
     settings:
       view_mode: default
@@ -74,20 +108,24 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
   field_phone:
-    weight: 4
+    weight: 8
     label: above
     settings:
       title: ''
     third_party_settings: {  }
     type: telephone_link
     region: content
+  field_preferred_name:
+    type: string
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_job_title: true
-  field_large_image: true
-  field_name: true
-  field_preferred_name: true
+hidden: {  }

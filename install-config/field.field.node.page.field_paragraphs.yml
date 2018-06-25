@@ -12,8 +12,8 @@ id: node.page.field_paragraphs
 field_name: field_paragraphs
 entity_type: node
 bundle: page
-label: Paragraphs
-description: ''
+label: 'Middle (parallel to sidebar)'
+description: 'Leave this section blank to create a full-width page without a sidebar.'
 required: false
 translatable: false
 default_value: {  }
@@ -27,38 +27,41 @@ settings:
     target_bundles_drag_drop:
       2_1_slab:
         enabled: true
-        weight: -25
+        weight: -27
       flex_grid:
-        weight: -24
+        weight: -26
         enabled: false
       body:
-        weight: -23
+        weight: -25
         enabled: false
       calls_to_action:
-        weight: -22
+        weight: -24
         enabled: false
       carousel:
-        weight: -21
+        weight: -23
         enabled: false
       custom_teasers:
-        weight: -20
+        weight: -22
+        enabled: false
+      editorial_aside:
+        weight: -21
         enabled: false
       feed:
-        weight: -19
+        weight: -20
         enabled: false
       gallery:
-        weight: -18
+        weight: -19
         enabled: false
       link_lists:
-        weight: -17
+        weight: -18
         enabled: false
       media:
-        weight: -16
+        weight: -17
         enabled: false
       statistics:
-        weight: -15
+        weight: -16
         enabled: false
       zipper:
-        weight: -14
+        weight: -15
         enabled: false
 field_type: entity_reference_revisions
