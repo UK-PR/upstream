@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - eck.eck_type.collection_item.body
     - eck.eck_type.collection_item.call_to_action
     - eck.eck_type.collection_item.contact_info
     - eck.eck_type.collection_item.content_reference
@@ -27,6 +28,7 @@ settings:
   handler: 'default:collection_item'
   handler_settings:
     target_bundles:
+      body: body
       call_to_action: call_to_action
       contact_info: contact_info
       content_reference: content_reference
