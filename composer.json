@@ -135,6 +135,7 @@
     "drupal/field_group_settings": "1.x-dev",
     "drupal/menu_block": "^1.5",
     "drupal/tab_toolbar": "^1.0@beta",
+    "drupal/described_link": "1.x-dev",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
