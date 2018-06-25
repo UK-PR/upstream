@@ -38,8 +38,8 @@ content:
     label: hidden
     settings:
       headline_group_tag: div
-      headline_group_class: headline-group
-      headline_group_bem: true
+      headline_group_class: heading--display
+      headline_group_bem: '1'
     third_party_settings: {  }
     type: headline_default
     region: content

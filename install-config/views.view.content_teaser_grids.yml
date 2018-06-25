@@ -57,7 +57,11 @@ display:
           items_per_page: 3
           offset: 0
       style:
-        type: html_list
+        type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -211,6 +215,11 @@ display:
           reduce_duplicates: false
           plugin_id: taxonomy_index_tid
       display_extenders: {  }
+      use_more: false
+      use_more_always: true
+      use_more_text: 'View all'
+      link_url: ''
+      link_display: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -228,6 +237,17 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      link_display: custom_url
+      defaults:
+        link_display: false
+        link_url: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      link_url: /news
+      use_more: true
+      use_more_always: true
+      use_more_text: 'View all'
     cache_metadata:
       max-age: -1
       contexts:
@@ -300,10 +320,22 @@ display:
       defaults:
         filters: false
         filter_groups: false
+        title: false
+        link_display: false
+        link_url: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      title: Events
+      link_display: custom_url
+      link_url: /events
+      use_more: true
+      use_more_always: true
+      use_more_text: 'View all'
     cache_metadata:
       max-age: -1
       contexts:
@@ -376,10 +408,22 @@ display:
       defaults:
         filters: false
         filter_groups: false
+        title: false
+        link_display: false
+        link_url: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      title: People
+      link_display: custom_url
+      link_url: /people
+      use_more: true
+      use_more_always: true
+      use_more_text: 'View all'
     cache_metadata:
       max-age: -1
       contexts:

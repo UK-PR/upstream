@@ -51,7 +51,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-    type: headline_complete
+    type: headline_headline_only
     region: content
   field_main:
     weight: 1

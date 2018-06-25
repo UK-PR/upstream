@@ -28,6 +28,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
@@ -48,7 +51,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-    type: headline_complete
+    type: headline_headline_only
     region: content
   field_main:
     weight: 1
@@ -60,6 +63,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
