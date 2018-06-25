@@ -4,30 +4,23 @@ status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.link_collection
-    - field.field.collection_item.link_collection.field_described_items
+    - field.field.collection_item.link_collection.field_described_links
     - field.field.collection_item.link_collection.field_description
   module:
-    - entity_reference_widget_helpers
-    - inline_entity_form
+    - described_link
     - text
 id: collection_item.link_collection.default
 targetEntityType: collection_item
 bundle: link_collection
 mode: default
 content:
-  field_described_items:
+  field_described_links:
     weight: 4
     settings:
-      form_mode: default
-      override_labels: true
-      label_singular: link
-      label_plural: links
-    third_party_settings:
-      entity_reference_widget_helpers:
-        dropdown_if_less: ''
-        use_dropdown: 0
-        collection_link: 0
-    type: inline_entity_form_simple
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: described_link_default
     region: content
   field_description:
     weight: 3

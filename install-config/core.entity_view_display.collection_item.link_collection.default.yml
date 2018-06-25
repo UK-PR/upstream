@@ -4,23 +4,27 @@ status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.link_collection
-    - field.field.collection_item.link_collection.field_described_items
+    - field.field.collection_item.link_collection.field_described_links
     - field.field.collection_item.link_collection.field_description
   module:
+    - described_link
     - text
 id: collection_item.link_collection.default
 targetEntityType: collection_item
 bundle: link_collection
 mode: default
 content:
-  field_described_items:
+  field_described_links:
     weight: -3
     label: hidden
     settings:
-      link: true
-      view_mode: default
+      trim_length: '80'
+      url_only: ''
+      url_plain: ''
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: described_link_default
     region: content
   field_description:
     weight: -4

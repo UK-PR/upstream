@@ -1,9 +1,0 @@
-uuid: 700372bb-0bbd-4887-b0ff-102f176c5816
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.collection_item
-name: 'Described Link'
-type: described_link
-description: 'A link with some description'

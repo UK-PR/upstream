@@ -4,6 +4,6 @@ status: true
 dependencies:
   config:
     - eck.eck_entity_type.collection_item
-name: 'Accordion Panel'
+name: 'Zipper Panel'
 type: accordion_panel
 description: 'Titled content within a zipper/accordion'

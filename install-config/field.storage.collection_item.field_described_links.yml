@@ -1,16 +1,16 @@
-uuid: 01adfb98-34e4-4400-87ae-90b1f4dcc0f0
+uuid: 7bf3d1e1-69cd-44f5-8177-7728c1cce990
 langcode: en
 status: true
 dependencies:
   module:
+    - described_link
     - eck
-id: collection_item.field_described_items
-field_name: field_described_items
+id: collection_item.field_described_links
+field_name: field_described_links
 entity_type: collection_item
-type: entity_reference
-settings:
-  target_type: collection_item
-module: core
+type: described_link
+settings: {  }
+module: described_link
 locked: false
 cardinality: -1
 translatable: true

@@ -18,6 +18,7 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  described_link: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
