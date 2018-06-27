@@ -6,8 +6,10 @@ dependencies:
     - core.entity_view_mode.collection_item.full_width
     - eck.eck_type.collection_item.media_figure
     - field.field.collection_item.media_figure.field_description
+    - field.field.collection_item.media_figure.field_link
     - field.field.collection_item.media_figure.field_media
   module:
+    - link
     - text
 id: collection_item.media_figure.full_width
 targetEntityType: collection_item
@@ -15,12 +17,24 @@ bundle: media_figure
 mode: full_width
 content:
   field_description:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
+  field_link:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
   field_media:
     type: entity_reference_entity_view
     weight: 0

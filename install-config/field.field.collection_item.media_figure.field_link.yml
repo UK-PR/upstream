@@ -1,0 +1,23 @@
+uuid: b5cfff19-5240-4a71-ad4b-eb64f190556c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.media_figure
+    - field.storage.collection_item.field_link
+  module:
+    - link
+id: collection_item.media_figure.field_link
+field_name: field_link
+entity_type: collection_item
+bundle: media_figure
+label: Link
+description: 'Optional link for media item'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link
