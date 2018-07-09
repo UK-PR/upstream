@@ -1,0 +1,9 @@
+override: false
+show_block: false
+alert_level: danger
+alert_title: 'Emergency alert title'
+alert_message:
+  value: "<p>Text describing the alert. <a href=\"/\">You may link</a>&nbsp;to additional information.</p>\r\n"
+  format: basic_html
+_core:
+  default_config_hash: GYDo-wOSB2-XTG8DQxJJj2Gm_e_ghrgSB7XyD4iOGFQ

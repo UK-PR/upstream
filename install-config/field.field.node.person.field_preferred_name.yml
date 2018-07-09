@@ -10,7 +10,7 @@ field_name: field_preferred_name
 entity_type: node
 bundle: person
 label: 'Preferred name'
-description: 'Optional; overrides name for front end display.'
+description: 'Optional; overrides all name fields. Type exactly as you would like it to appear, e.g. Mr. John Doe.'
 required: false
 translatable: false
 default_value: {  }

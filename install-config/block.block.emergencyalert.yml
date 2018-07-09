@@ -1,0 +1,26 @@
+uuid: fe671ac5-c53f-4a07-8ea6-feea2fb90865
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - emergency_alerts
+  theme:
+    - ukd8
+id: emergencyalert
+theme: ukd8
+region: content_prefix
+weight: -11
+provider: null
+plugin: emergency_alert
+settings:
+  id: emergency_alert
+  label: 'Emergency Alert'
+  provider: emergency_alerts
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
