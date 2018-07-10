@@ -97,7 +97,7 @@
     "drupal/components": "^1.0",
     "drupal/config_installer": "^1.0",
     "drupal/console": "^1.0.2",
-    "drupal/core": "8.5.4",
+    "drupal/core": "8.5.5",
     "drupal/devel": "^1.0",
     "drupal/easy_breadcrumb": "^1.6",
     "drupal/eck": "^1.0",
