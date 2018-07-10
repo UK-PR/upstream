@@ -19,6 +19,7 @@ dependencies:
   module:
     - entity_reference_widget_helpers
     - name
+    - telephone
     - text
     - user
 id: node.person.teaser
@@ -44,9 +45,24 @@ content:
     third_party_settings:
       entity_reference_widget_helpers:
         custom_label_link: ''
+  field_email:
+    type: email_mailto
+    weight: 7
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_job_title:
     type: string
     weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_location_text:
+    type: string
+    weight: 9
     region: content
     label: hidden
     settings:
@@ -77,6 +93,14 @@ content:
       multiple_el_al_first: '1'
       markup: false
     third_party_settings: {  }
+  field_phone:
+    type: telephone_link
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
   field_preferred_name:
     type: string
     weight: 1
@@ -91,8 +115,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_email: true
   field_large_image: true
-  field_location_text: true
   field_paragraphs: true
-  field_phone: true

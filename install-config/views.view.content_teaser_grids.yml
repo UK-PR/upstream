@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.listing
     - core.entity_view_mode.node.teaser
     - node.type.event
     - node.type.news
@@ -449,8 +448,8 @@ display:
         use_more_always: false
         use_more_text: false
         sorts: false
-        style: false
-        row: false
+        style: true
+        row: true
       filter_groups:
         operator: AND
         groups:
@@ -486,17 +485,6 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      style:
-        type: default
-        options:
-          row_class: ''
-          default_row_class: false
-          uses_fields: false
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: listing
     cache_metadata:
       max-age: -1
       contexts:

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.listing
+    - core.entity_view_mode.node.teaser
     - node.type.person
     - taxonomy.vocabulary.people_categories
   module:
@@ -81,7 +81,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: listing
+          view_mode: teaser
       fields: {  }
       filters:
         status:

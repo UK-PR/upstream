@@ -25,7 +25,7 @@ settings:
   depth: 0
   expand: 0
   parent: 'main:'
-  suggestion: main
+  suggestion: main__sidebar
 visibility:
   condition_group:
     id: condition_group
