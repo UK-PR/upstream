@@ -12,7 +12,7 @@ field_name: field_phone
 entity_type: node
 bundle: person
 label: Phone
-description: ''
+description: "Always use a full 10-digit number, including area code, separated with hyphens. Do not use parentheses. Toll-free numbers that always require a “1-” prefix should include it. Precede extensions with ext.<br>\r\nExamples: <br>\r\n• 859-257-1754, ext. 235 <br>\r\n• 1-800-555-2222<br>"
 required: false
 translatable: false
 default_value: {  }

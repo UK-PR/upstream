@@ -5,7 +5,7 @@ dependencies:
   module:
     - system
 id: news
-label: News
+label: 'Any News'
 logic: and
 conditions:
   3e90449e-aea0-4a18-843c-1ac88ce48f38:

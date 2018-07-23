@@ -9,8 +9,8 @@ dependencies:
     - ukd8
 id: emergencyalert
 theme: ukd8
-region: content_prefix
-weight: -11
+region: alert
+weight: -10
 provider: null
 plugin: emergency_alert
 settings:
