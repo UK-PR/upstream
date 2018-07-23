@@ -246,6 +246,9 @@
       },
       "drupal/inline_entity_form": {
         "multivalue fix": "https://www.drupal.org/files/issues/2018-05-30/multivalue-complex-and-simple-ief-fix-2653574-100.patch"
+      },
+      "drupal/menu_block": {
+        "follow active": "https://www.drupal.org/files/issues/2018-05-10/menu_block-follow-2756675-50.patch"
       }
     }
   }
