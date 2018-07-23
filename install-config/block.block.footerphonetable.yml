@@ -1,0 +1,31 @@
+uuid: 15056fd7-9b5e-460e-bec9-3c2eff5b305d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:table:c6a24339-3694-4cd7-ba10-970a7a2c53f2'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - ukd8
+id: footerphonetable
+theme: ukd8
+region: footer_middle
+weight: 0
+provider: null
+plugin: 'block_content:c6a24339-3694-4cd7-ba10-970a7a2c53f2'
+settings:
+  id: 'block_content:c6a24339-3694-4cd7-ba10-970a7a2c53f2'
+  label: 'Footer phone table'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

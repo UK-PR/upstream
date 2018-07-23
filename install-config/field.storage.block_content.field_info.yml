@@ -1,0 +1,20 @@
+uuid: cfe7486d-c908-4d5b-bf04-29d674d35c41
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - eck
+id: block_content.field_info
+field_name: field_info
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: collection_item
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

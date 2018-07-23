@@ -1,6 +1,6 @@
 uuid: 9152754d-18eb-4c73-a8eb-46d05e702261
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -12,8 +12,8 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: ukd8_footer
 theme: ukd8
-region: footer_middle
-weight: -10
+region: footer_left
+weight: -11
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
