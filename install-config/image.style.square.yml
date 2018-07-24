@@ -5,7 +5,7 @@ dependencies:
   module:
     - focal_point
 name: square
-label: Square
+label: 'Square (300)'
 effects:
   494ff38d-f6e7-43d2-80ae-4f7a67e12dd9:
     uuid: 494ff38d-f6e7-43d2-80ae-4f7a67e12dd9

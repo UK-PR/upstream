@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.collection_item.pullquote
     - field.field.collection_item.pullquote.field_attribution_1
     - field.field.collection_item.pullquote.field_attribution_2
+    - field.field.collection_item.pullquote.field_brief
     - field.field.collection_item.pullquote.field_description
     - field.field.collection_item.pullquote.field_media
     - field.field.collection_item.pullquote.field_theme_color_scheme
@@ -49,5 +50,6 @@ content:
     type: entity_reference_entity_view
     region: content
 hidden:
+  field_brief: true
   field_theme_color_scheme: true
   title: true

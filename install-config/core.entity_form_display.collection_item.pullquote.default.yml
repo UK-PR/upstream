@@ -7,6 +7,7 @@ dependencies:
     - entity_browser.browser.media_browser_modal
     - field.field.collection_item.pullquote.field_attribution_1
     - field.field.collection_item.pullquote.field_attribution_2
+    - field.field.collection_item.pullquote.field_brief
     - field.field.collection_item.pullquote.field_description
     - field.field.collection_item.pullquote.field_media
     - field.field.collection_item.pullquote.field_theme_color_scheme
@@ -20,6 +21,7 @@ third_party_settings:
     group_settings:
       children:
         - field_theme_color_scheme
+        - field_brief
       parent_name: ''
       weight: 0
       format_type: settings
@@ -48,6 +50,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_brief:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_description:
     weight: 1
     settings:
@@ -67,6 +76,7 @@ content:
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: thumbnail
+      field_widget_replace: false
     third_party_settings:
       entity_reference_widget_helpers:
         collection_link: 0
