@@ -73,9 +73,11 @@ content:
     region: content
   field_theme_color_scheme:
     weight: 5
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: string_textfield
     region: content
 hidden:
   title: true

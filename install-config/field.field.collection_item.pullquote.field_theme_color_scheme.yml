@@ -1,21 +1,19 @@
-uuid: e7e78814-6426-4817-a5dd-3187050f86eb
+uuid: a8a9feb9-146b-4017-8a1d-8d38abf85e9f
 langcode: en
 status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.pullquote
     - field.storage.collection_item.field_theme_color_scheme
-  module:
-    - options
 id: collection_item.pullquote.field_theme_color_scheme
 field_name: field_theme_color_scheme
 entity_type: collection_item
 bundle: pullquote
-label: 'Color scheme'
+label: 'Color theme'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

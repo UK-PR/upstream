@@ -59,6 +59,7 @@ content:
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: half_width
+      field_widget_replace: false
     third_party_settings:
       entity_reference_widget_helpers:
         collection_link: 0
@@ -83,6 +84,7 @@ content:
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: thumbnail
+      field_widget_replace: false
     third_party_settings:
       entity_reference_widget_helpers:
         collection_link: 0
@@ -90,9 +92,11 @@ content:
     region: content
   field_theme_color_scheme:
     weight: 6
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: string_textfield
     region: content
 hidden:
   title: true

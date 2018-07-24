@@ -1,21 +1,19 @@
-uuid: 05a94ccd-0bd9-43e7-bcce-0d034f46104e
+uuid: bd85a8f3-451a-432e-aae0-b7c5bef19e68
 langcode: en
 status: true
 dependencies:
   config:
     - eck.eck_type.page_header.text_only
     - field.storage.page_header.field_theme_color_scheme
-  module:
-    - options
 id: page_header.text_only.field_theme_color_scheme
 field_name: field_theme_color_scheme
 entity_type: page_header
 bundle: text_only
-label: 'Color scheme'
+label: 'Color theme'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

@@ -1,21 +1,19 @@
-uuid: cd3bebcc-6a41-490e-bcaa-c2246feb8fc5
+uuid: c0a1e35e-55d9-4465-a3eb-ef0eb6cc71d8
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_theme_color_scheme
     - paragraphs.paragraphs_type.statistics
-  module:
-    - options
 id: paragraph.statistics.field_theme_color_scheme
 field_name: field_theme_color_scheme
 entity_type: paragraph
 bundle: statistics
-label: 'Color scheme'
+label: 'Color theme'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

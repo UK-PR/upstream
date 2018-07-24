@@ -1,27 +1,18 @@
-uuid: ea1f4343-4fa7-4063-91a6-dde77bad687d
+uuid: 9e23231c-7216-4c79-b39f-4e81d3c28d0a
 langcode: en
 status: true
 dependencies:
   module:
     - eck
-    - options
 id: collection_item.field_theme_color_scheme
 field_name: field_theme_color_scheme
 entity_type: collection_item
-type: list_string
+type: string
 settings:
-  allowed_values:
-    -
-      value: light
-      label: Light
-    -
-      value: dark
-      label: Dark
-    -
-      value: wildcat
-      label: 'Wildcat blue'
-  allowed_values_function: ''
-module: options
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

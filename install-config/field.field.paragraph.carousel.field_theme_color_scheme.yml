@@ -1,21 +1,19 @@
-uuid: a6d34aad-c2ee-4c3f-81f5-6c09c5ae8d88
+uuid: 5bfef293-fbc3-4a52-8122-20bc8d0cd2af
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_theme_color_scheme
     - paragraphs.paragraphs_type.carousel
-  module:
-    - options
 id: paragraph.carousel.field_theme_color_scheme
 field_name: field_theme_color_scheme
 entity_type: paragraph
 bundle: carousel
-label: 'Color scheme'
-description: ''
+label: 'Color theme'
+description: 'Theme setttings have no effect if used in an editorial (partial-width) column.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

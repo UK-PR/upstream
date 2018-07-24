@@ -17,8 +17,8 @@ third_party_settings:
   field_group:
     group_settings:
       children:
-        - field_theme_color_scheme
         - field_theme_show_divisions
+        - field_theme_color_scheme
       parent_name: ''
       weight: 0
       format_type: settings
@@ -58,10 +58,12 @@ content:
     type: headline_headline_only
     region: content
   field_theme_color_scheme:
-    weight: 3
-    settings: {  }
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: string_textfield
     region: content
   field_theme_show_divisions:
     weight: 4

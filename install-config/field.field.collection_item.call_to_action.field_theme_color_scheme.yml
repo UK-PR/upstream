@@ -1,21 +1,19 @@
-uuid: 4851bd01-1804-4d3a-a9cf-7cfd7f3acbfc
+uuid: d339f5cd-69b7-4d33-a320-0a339ad9c0bc
 langcode: en
 status: true
 dependencies:
   config:
     - eck.eck_type.collection_item.call_to_action
     - field.storage.collection_item.field_theme_color_scheme
-  module:
-    - options
 id: collection_item.call_to_action.field_theme_color_scheme
 field_name: field_theme_color_scheme
 entity_type: collection_item
 bundle: call_to_action
-label: 'Color scheme'
+label: 'Color theme'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

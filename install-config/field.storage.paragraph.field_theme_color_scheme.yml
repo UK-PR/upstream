@@ -1,27 +1,18 @@
-uuid: 3a12118b-dea4-43c3-92c4-d2265fa680f6
+uuid: 8c33b0a8-ae7b-43d8-a8c8-521c08ae7ce5
 langcode: en
 status: true
 dependencies:
   module:
-    - options
     - paragraphs
 id: paragraph.field_theme_color_scheme
 field_name: field_theme_color_scheme
 entity_type: paragraph
-type: list_string
+type: string
 settings:
-  allowed_values:
-    -
-      value: light
-      label: Light
-    -
-      value: dark
-      label: Dark
-    -
-      value: wildcat
-      label: 'Wildcat blue'
-  allowed_values_function: ''
-module: options
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true
