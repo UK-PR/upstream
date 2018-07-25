@@ -249,6 +249,9 @@
       },
       "drupal/menu_block": {
         "follow active": "https://www.drupal.org/files/issues/2018-05-10/menu_block-follow-2756675-50.patch"
+      },
+      "drupal/entity_embed": {
+        "preview display mode": "https://www.drupal.org/files/issues/entity_embed-preview_display_plugin-2882866-2.patch"
       }
     }
   }
