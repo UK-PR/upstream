@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.collection_item.media_figure
     - entity_browser.browser.media_browser_modal
     - field.field.collection_item.media_figure.field_description
+    - field.field.collection_item.media_figure.field_hide_heading
     - field.field.collection_item.media_figure.field_link
     - field.field.collection_item.media_figure.field_media
   module:
@@ -25,6 +26,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_hide_heading:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_link:
     weight: 2

@@ -5,6 +5,7 @@ dependencies:
   config:
     - eck.eck_type.collection_item.media_figure
     - field.field.collection_item.media_figure.field_description
+    - field.field.collection_item.media_figure.field_hide_heading
     - field.field.collection_item.media_figure.field_link
     - field.field.collection_item.media_figure.field_media
   module:
@@ -51,4 +52,5 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_hide_heading: true
