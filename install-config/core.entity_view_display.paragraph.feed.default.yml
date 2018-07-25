@@ -3,17 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.feed.field_collection_item
     - field.field.paragraph.feed.field_headline_group
-    - field.field.paragraph.feed.field_view
     - paragraphs.paragraphs_type.feed
   module:
     - headline_group
-    - viewfield
 id: paragraph.feed.default
 targetEntityType: paragraph
 bundle: feed
 mode: default
 content:
+  field_collection_item:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_headline_group:
     weight: 0
     label: hidden
@@ -21,17 +29,8 @@ content:
       headline_group_tag: h2
       headline_group_class: ''
       headline_group_bem: '1'
+      headline_group_anchor: false
     third_party_settings: {  }
     type: headline_default
-    region: content
-  field_view:
-    weight: 1
-    label: hidden
-    settings:
-      view_title: hidden
-      always_build_output: 0
-      empty_view_title: hidden
-    third_party_settings: {  }
-    type: viewfield_default
     region: content
 hidden: {  }

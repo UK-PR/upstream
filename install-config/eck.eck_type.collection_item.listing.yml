@@ -1,0 +1,9 @@
+uuid: 37b58e27-45a0-4093-a5cc-e30a296458c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+name: Listing
+type: listing
+description: 'A viewfield reference'

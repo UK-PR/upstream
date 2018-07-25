@@ -1,14 +1,14 @@
-uuid: 9ca20307-adea-440d-9782-a303f4ca64ca
+uuid: 2802c56a-2560-4c25-ab0c-a2f3d86b4c29
 langcode: en
 status: true
 dependencies:
   module:
-    - paragraphs
+    - eck
     - viewfield
     - views
-id: paragraph.field_view
+id: collection_item.field_view
 field_name: field_view
-entity_type: paragraph
+entity_type: collection_item
 type: viewfield
 settings:
   target_type: view

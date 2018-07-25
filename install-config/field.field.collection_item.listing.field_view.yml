@@ -1,25 +1,25 @@
-uuid: cfb5f704-c756-41f7-8486-67d094b9cbb3
+uuid: 27cc072b-3bb8-4065-bfff-e0225059bec2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_view
-    - paragraphs.paragraphs_type.feed
+    - eck.eck_type.collection_item.listing
+    - field.storage.collection_item.field_view
     - views.view.content_teaser_grids
   module:
     - viewfield
-id: paragraph.feed.field_view
+id: collection_item.listing.field_view
 field_name: field_view
-entity_type: paragraph
-bundle: feed
+entity_type: collection_item
+bundle: listing
 label: View
-description: 'Specify a View block and a term filter'
+description: ''
 required: false
 translatable: false
 default_value:
   -
     token_help: ''
-    display_id: block_1
+    display_id: block_2
     arguments: ''
     target_uuid: 28083d31-e2fc-42a0-a98e-8fd927c068df
 default_value_callback: ''
@@ -27,13 +27,20 @@ settings:
   force_default: 0
   allowed_views:
     content_teaser_grids: content_teaser_grids
+    collection_item_usage: 0
     content: 0
     block_content: 0
+    directory: 0
+    events: 0
+    events_sidenav: 0
     file_entity_browser: 0
     files: 0
     frontpage: 0
     media: 0
     media_browser: 0
+    news: 0
+    news_sidenav: 0
+    paragraph_usage: 0
     user_admin_people: 0
     content_recent: 0
     redirect: 0
