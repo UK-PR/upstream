@@ -139,6 +139,7 @@
     "drupal/linkit_telephone": "1.x-dev",
     "drupal/emergency_alerts": "2.x-dev",
     "drupal/fourxx_templates": "1.x-dev",
+    "drupal/config_ignore": "^2.1",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
