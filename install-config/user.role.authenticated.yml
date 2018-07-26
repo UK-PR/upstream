@@ -12,6 +12,8 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access frontback'
+  - 'access media_browser_iframe entity browser pages'
+  - 'access media_browser_modal entity browser pages'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'dropzone upload files'
@@ -30,3 +32,4 @@ permissions:
   - 'view any quote entities'
   - 'view embederator entity'
   - 'view media'
+  - 'view own unpublished content'
