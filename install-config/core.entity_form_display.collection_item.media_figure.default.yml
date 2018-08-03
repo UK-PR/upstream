@@ -7,12 +7,10 @@ dependencies:
     - entity_browser.browser.media_browser_modal
     - field.field.collection_item.media_figure.field_description
     - field.field.collection_item.media_figure.field_hide_heading
-    - field.field.collection_item.media_figure.field_link
     - field.field.collection_item.media_figure.field_media
   module:
     - entity_browser
     - entity_reference_widget_helpers
-    - link
     - text
 id: collection_item.media_figure.default
 targetEntityType: collection_item
@@ -33,14 +31,6 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
-    region: content
-  field_link:
-    weight: 2
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   field_media:
     weight: 0

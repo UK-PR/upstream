@@ -1,9 +1,10 @@
 is_main: false
-lockup_wordmark_1: 'Your parent'
-lockup_wordmark_2: college
+lockup_wordmark_1: 'Your department'
+lockup_wordmark_2: name
 uky_home_url: 'http://www.uky.edu/'
 college_url: 'https://insidenewcity.com'
-college_title: 'Department of Web Sites'
+college_title: 'Parent unit'
+show_college_under_lockup: false
 scheme_options:
   light: 'Light blue'
   dark: 'Dark blue'
@@ -13,9 +14,9 @@ scheme_options:
 scheme_settings:
   page_header__full_width:
     name: 'Full width hero page header'
-    value: light
+    value: white
     disallowed:
-      - white
+      - light
       - gray
   page_header__split_header:
     name: 'Split hero page header'
@@ -32,6 +33,7 @@ scheme_settings:
     value: white
     disallowed:
       - gray
+      - wildcat
   collection_item__pullquote:
     name: Pullquote
     value: white
@@ -43,7 +45,7 @@ scheme_settings:
     disallowed:
       - light
       - gray
-      - wildcat
+      - dark
   paragraph__carousel:
     name: 'Carousel slab'
     value: white

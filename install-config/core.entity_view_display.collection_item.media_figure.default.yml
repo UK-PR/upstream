@@ -6,10 +6,8 @@ dependencies:
     - eck.eck_type.collection_item.media_figure
     - field.field.collection_item.media_figure.field_description
     - field.field.collection_item.media_figure.field_hide_heading
-    - field.field.collection_item.media_figure.field_link
     - field.field.collection_item.media_figure.field_media
   module:
-    - link
     - text
 id: collection_item.media_figure.default
 targetEntityType: collection_item
@@ -22,18 +20,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_link:
-    weight: 2
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
   field_media:
     type: entity_reference_entity_view
