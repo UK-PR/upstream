@@ -9,6 +9,7 @@ dependencies:
     - eck.eck_type.collection_item.content_reference
     - eck.eck_type.collection_item.custom_teaser
     - eck.eck_type.collection_item.link_collection
+    - eck.eck_type.collection_item.listing
     - eck.eck_type.collection_item.media_figure
     - eck.eck_type.collection_item.pullquote
     - eck.eck_type.collection_item.statistic
@@ -34,6 +35,7 @@ settings:
       content_reference: content_reference
       custom_teaser: custom_teaser
       link_collection: link_collection
+      listing: listing
       media_figure: media_figure
       pullquote: pullquote
       statistic: statistic
