@@ -82,6 +82,10 @@
     }
   ],
   "require": {
+    "drupal/config_installer": "^1.0",
+    "drupal/console": "^1.0.2",
+    "drupal/core": "8.5.6",
+    "webflo/drupal-core-strict": "8.5.6",
     "ahebrank/eck_autolabel": "dev-8.x-1.x",
     "ahebrank/frontback": "dev-master",
     "ahebrank/paragraphs_previewer_popup": "dev-8.x-1.x",
@@ -95,9 +99,6 @@
     "drupal/block_visibility_groups": "^1.1",
     "drupal/chosen": "^2.5",
     "drupal/components": "^1.0",
-    "drupal/config_installer": "^1.0",
-    "drupal/console": "^1.0.2",
-    "drupal/core": "8.5.6",
     "drupal/devel": "^1.0",
     "drupal/easy_breadcrumb": "^1.6",
     "drupal/eck": "^1.0",
@@ -129,7 +130,6 @@
     "drush/drush": "^9.0.0",
     "enyo/dropzone": "5.1.1",
     "harvesthq/chosen": "1.6.1",
-    "webflo/drupal-core-strict": "8.5.4",
     "drupal/viewfield": "^3.0@alpha",
     "drupal/headline_group": "1.x-dev",
     "drupal/field_group_settings": "1.x-dev",
