@@ -45,7 +45,7 @@ widgets:
   c1636017-c025-414b-b696-707ea9f85722:
     settings:
       entity_type: media
-      bundle: audio
+      bundle: hosted_video
       form_mode: default
       submit_text: 'Save video'
     uuid: c1636017-c025-414b-b696-707ea9f85722
