@@ -18,19 +18,7 @@ services:
       - files:/app/web/sites/default/files
       # mount points we expect to modify from the host
       - ./web/modules/custom:/app/web/modules/custom
-      # for custom theme
-      # - css:/app/web/themes/custom/example_ukd8/css
-      # - js:/app/web/themes/custom/example_ukd8/js
-      # - images:/app/web/themes/custom/example_ukd8/images
-      # - fonts:/app/web/themes/custom/example_ukd8/fonts
-      # - ./web/themes/custom/example_ukd8/drupal:/app/web/themes/custom/example_ukd8/drupal
-      # - ./web/themes/custom/example_ukd8/elements:/app/web/themes/custom/example_ukd8/elements
-      # - ./web/themes/custom/example_ukd8/macros:/app/web/themes/custom/example_ukd8/macros
-      # - ./web/themes/custom/example_ukd8/templates:/app/web/themes/custom/example_ukd8/templates
-      # - ./web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml:/app/web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml
-      # - ./web/themes/custom/example_ukd8/example_ukd8.info.yml:/app/web/themes/custom/example_ukd8/example_ukd8.info.yml
-      # - ./web/themes/custom/example_ukd8/example_ukd8.libraries.yml:/app/web/themes/custom/example_ukd8/example_ukd8.libraries.yml
-      # - ./web/themes/custom/example_ukd8/example_ukd8.theme:/app/web/themes/custom/example_ukd8/example_ukd8.theme
+      - ./web/themes/custom:/app/web/themes/custom
     links:
       - database
     working_dir: /app
@@ -56,11 +44,7 @@ services:
       - ./vendor:/app/vendor:delegated
       - files:/app/web/sites/default/files
       - ./web/modules/custom:/app/web/modules/custom
-      # for custom theme
-      # - css:/app/web/themes/custom/example_ukd8/css
-      # - js:/app/web/themes/custom/example_ukd8/js
-      # - images:/app/web/themes/custom/example_ukd8/images
-      # - fonts:/app/web/themes/custom/example_ukd8/fonts
+      - ./web/themes/custom:/app/web/themes/custom
     depends_on:
       - php
       - database
@@ -107,20 +91,8 @@ services:
       - ./docker/tty/ci_ssh_config:/app/ci_ssh_config:delegated
       - ./docker/tty/settings.php:/app/web/sites/default/settings.php:delegated
       - ./web/modules/custom:/app/web/modules/custom
+      - ./web/themes/custom:/app/web/themes/custom
       - files:/app/web/sites/default/files
-      # for custom theme
-      # - css:/app/web/themes/custom/example_ukd8/css
-      # - js:/app/web/themes/custom/example_ukd8/js
-      # - images:/app/web/themes/custom/example_ukd8/images
-      # - fonts:/app/web/themes/custom/example_ukd8/fonts
-      # - ./web/themes/custom/example_ukd8/drupal:/app/web/themes/custom/example_ukd8/drupal
-      # - ./web/themes/custom/example_ukd8/elements:/app/web/themes/custom/example_ukd8/elements
-      # - ./web/themes/custom/example_ukd8/macros:/app/web/themes/custom/example_ukd8/macros
-      # - ./web/themes/custom/example_ukd8/templates:/app/web/themes/custom/example_ukd8/templates
-      # - ./web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml:/app/web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml
-      # - ./web/themes/custom/example_ukd8/example_ukd8.info.yml:/app/web/themes/custom/example_ukd8/example_ukd8.info.yml
-      # - ./web/themes/custom/example_ukd8/example_ukd8.libraries.yml:/app/web/themes/custom/example_ukd8/example_ukd8.libraries.yml
-      # - ./web/themes/custom/example_ukd8/example_ukd8.theme:/app/web/themes/custom/example_ukd8/example_ukd8.theme
     working_dir: /app
     ports:
       - "9001:8080"
@@ -129,7 +101,7 @@ services:
     links:
       - database:database
 
-  # compile assets for custom theme
+  # # compile assets for custom theme
   # taskrunner:
   #   environment:
   #     NPM_INSTALL: 1
@@ -137,18 +109,13 @@ services:
   #   volumes:
   #     # map assets in and persistent storage containers out
   #     - ./web/themes/custom/example_ukd8/assets:/app/assets:ro
-  #     - css:/app/dist/css
-  #     - js:/app/dist/js
+  #     - ./web/themes/custom/example_ukd8/css:/app/dist/css
+  #     - ./web/themes/custom/example_ukd8/js:/app/dist/js
   #     # config overrides
   #     - ./docker/taskrunner/package.json:/app/package.json:ro
   #     - ./docker/taskrunner/gulpfile.js:/app/gulpfile.js:ro
   #   working_dir: /app
 
-
 volumes:
   db_data:
   files:
-  css:
-  js:
-  images:
-  fonts:
