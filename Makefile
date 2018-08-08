@@ -23,7 +23,7 @@ clone: init
 
 replay:
 	rm -f Makefile .gitlab-ci.yml .ci_ssh_config
-	rsync -rlDv --exclude .git --exclude install-config --exclude default-settings --exclude misc-content --exclude test . $(BUILD_REPO)
+	rsync -rlDv --exclude .git --exclude install-config --exclude default-settings --exclude misc-content --exclude test --exclude local-dev . $(BUILD_REPO)
 	rsync -rlDv install-config/ $(BUILD_REPO)/web/sites/default/config
 	rsync -rdDv default-settings/ $(BUILD_REPO)/web/sites/default/
 	rsync -rlDv misc-content/embed_buttons/ $(BUILD_REPO)/web/sites/default/files/embed_buttons
