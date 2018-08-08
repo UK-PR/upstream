@@ -1,0 +1,154 @@
+version: '3'
+
+services:
+  php:
+    image: newcity/d8:latest
+    volumes:
+      - ./web/core:/app/web/core:delegated
+      - ./web/libraries:/app/web/libraries:delegated
+      - ./web/modules/contrib:/app/web/modules/contrib:delegated
+      - ./web/profiles:/app/web/profiles:delegated
+      - ./web/sites/default/config:/app/web/default/config:delegated
+      - ./web/themes/contrib:/app/web/themes/contrib:delegated
+      - ./web/.ht.router.php:/app/web/.ht.router.php:delegated
+      - ./web/autoload.php:/app/web/autoload.php:delegated
+      - ./web/index.php:/app/web/index.php:delegated
+      - ./web/update.php:/app/web/update.php:delegated
+      - ./vendor:/app/vendor:delegated
+      - files:/app/web/sites/default/files
+      # mount points we expect to modify from the host
+      - ./web/modules/custom:/app/web/modules/custom
+      # for custom theme
+      # - css:/app/web/themes/custom/example_ukd8/css
+      # - js:/app/web/themes/custom/example_ukd8/js
+      # - images:/app/web/themes/custom/example_ukd8/images
+      # - fonts:/app/web/themes/custom/example_ukd8/fonts
+      # - ./web/themes/custom/example_ukd8/drupal:/app/web/themes/custom/example_ukd8/drupal
+      # - ./web/themes/custom/example_ukd8/elements:/app/web/themes/custom/example_ukd8/elements
+      # - ./web/themes/custom/example_ukd8/macros:/app/web/themes/custom/example_ukd8/macros
+      # - ./web/themes/custom/example_ukd8/templates:/app/web/themes/custom/example_ukd8/templates
+      # - ./web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml:/app/web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml
+      # - ./web/themes/custom/example_ukd8/example_ukd8.info.yml:/app/web/themes/custom/example_ukd8/example_ukd8.info.yml
+      # - ./web/themes/custom/example_ukd8/example_ukd8.libraries.yml:/app/web/themes/custom/example_ukd8/example_ukd8.libraries.yml
+      # - ./web/themes/custom/example_ukd8/example_ukd8.theme:/app/web/themes/custom/example_ukd8/example_ukd8.theme
+    links:
+      - database
+    working_dir: /app
+    restart: always
+
+  web:
+    image: nginx:alpine
+    ports:
+      - "9000:80"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:delegated
+      - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf:delegated
+      - ./web/core:/app/web/core:delegated
+      - ./web/libraries:/app/web/libraries:delegated
+      - ./web/modules/contrib:/app/web/modules/contrib:delegated
+      - ./web/profiles:/app/web/profiles:delegated
+      - ./web/sites/default/config:/app/web/default/config:delegated
+      - ./web/themes/contrib:/app/web/themes/contrib:delegated
+      - ./web/.ht.router.php:/app/web/.ht.router.php:delegated
+      - ./web/autoload.php:/app/web/autoload.php:delegated
+      - ./web/index.php:/app/web/index.php:delegated
+      - ./web/update.php:/app/web/update.php:delegated
+      - ./vendor:/app/vendor:delegated
+      - files:/app/web/sites/default/files
+      - ./web/modules/custom:/app/web/modules/custom
+      # for custom theme
+      # - css:/app/web/themes/custom/example_ukd8/css
+      # - js:/app/web/themes/custom/example_ukd8/js
+      # - images:/app/web/themes/custom/example_ukd8/images
+      # - fonts:/app/web/themes/custom/example_ukd8/fonts
+    depends_on:
+      - php
+      - database
+    links:
+      - php
+
+  # MySQL Server
+  database:
+    image: mariadb:10
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_DATABASE: drupal
+      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    restart: always
+    ports:
+      - "3306:3306"
+
+  # management
+  shell:
+    image: newcity/tty.js
+    environment:
+      - TTY=1
+      - GITLAB_API_PRIVATE_TOKEN=${GITLAB_API_PRIVATE_TOKEN}
+      - GITLAB_PROJECT=${GITLAB_PROJECT}
+    volumes:
+      - ./web/core:/app/web/core:delegated
+      - ./web/libraries:/app/web/libraries:delegated
+      - ./web/modules/contrib:/app/web/modules/contrib:delegated
+      - ./web/profiles:/app/web/profiles:delegated
+      - ./web/sites:/app/web/sites:delegated
+      - ./web/themes/contrib:/app/web/themes/contrib:delegated
+      - ./web/.ht.router.php:/app/web/.ht.router.php:delegated
+      - ./web/autoload.php:/app/web/autoload.php:delegated
+      - ./web/index.php:/app/web/index.php:delegated
+      - ./web/update.php:/app/web/update.php:delegated
+      - ./vendor:/app/vendor:delegated
+      - ./scripts:/app/scripts:delegated
+      - ./composer.json:/app/composer.json
+      - ./docker/tty/Makefile:/app/Makefile:delegated
+      - ./docker/tty/ci_ssh_config:/app/ci_ssh_config:delegated
+      - ./docker/tty/settings.php:/app/web/sites/default/settings.php:delegated
+      - ./web/modules/custom:/app/web/modules/custom
+      - files:/app/web/sites/default/files
+      # for custom theme
+      # - css:/app/web/themes/custom/example_ukd8/css
+      # - js:/app/web/themes/custom/example_ukd8/js
+      # - images:/app/web/themes/custom/example_ukd8/images
+      # - fonts:/app/web/themes/custom/example_ukd8/fonts
+      # - ./web/themes/custom/example_ukd8/drupal:/app/web/themes/custom/example_ukd8/drupal
+      # - ./web/themes/custom/example_ukd8/elements:/app/web/themes/custom/example_ukd8/elements
+      # - ./web/themes/custom/example_ukd8/macros:/app/web/themes/custom/example_ukd8/macros
+      # - ./web/themes/custom/example_ukd8/templates:/app/web/themes/custom/example_ukd8/templates
+      # - ./web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml:/app/web/themes/custom/example_ukd8/example_ukd8.breakpoints.yml
+      # - ./web/themes/custom/example_ukd8/example_ukd8.info.yml:/app/web/themes/custom/example_ukd8/example_ukd8.info.yml
+      # - ./web/themes/custom/example_ukd8/example_ukd8.libraries.yml:/app/web/themes/custom/example_ukd8/example_ukd8.libraries.yml
+      # - ./web/themes/custom/example_ukd8/example_ukd8.theme:/app/web/themes/custom/example_ukd8/example_ukd8.theme
+    working_dir: /app
+    ports:
+      - "9001:8080"
+    depends_on:
+      - web
+    links:
+      - database:database
+
+  # compile assets for custom theme
+  # taskrunner:
+  #   environment:
+  #     NPM_INSTALL: 1
+  #   image: newcity/taskrunner:node8
+  #   volumes:
+  #     # map assets in and persistent storage containers out
+  #     - ./web/themes/custom/example_ukd8/assets:/app/assets:ro
+  #     - css:/app/dist/css
+  #     - js:/app/dist/js
+  #     # config overrides
+  #     - ./docker/taskrunner/package.json:/app/package.json:ro
+  #     - ./docker/taskrunner/gulpfile.js:/app/gulpfile.js:ro
+  #   working_dir: /app
+
+
+volumes:
+  db_data:
+  files:
+  css:
+  js:
+  images:
+  fonts:

@@ -27,6 +27,7 @@ replay:
 	rsync -rlDv install-config/ $(BUILD_REPO)/web/sites/default/config
 	rsync -rdDv default-settings/ $(BUILD_REPO)/web/sites/default/
 	rsync -rlDv misc-content/embed_buttons/ $(BUILD_REPO)/web/sites/default/files/embed_buttons
+	rsync -rlDv local-dev/ $(BUILD_REPO)/
 	mv $(BUILD_REPO) build
 
 push: init

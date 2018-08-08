@@ -203,6 +203,12 @@
       ],
       "web/libraries/{$name}": [
         "type:drupal-library"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/themes/custom/{$name}": [
+        "type:drupal-custom-theme"
       ]
     },
     "drupal-scaffold": {
