@@ -140,6 +140,7 @@
     "drupal/emergency_alerts": "2.x-dev",
     "drupal/fourxx_templates": "1.x-dev",
     "drupal/config_ignore": "^2.1",
+    "drupal/search_kint": "^1.0",
     "uk-d8/ukd8": "dev-master",
     "uk-d8/ukd8_customizations": "dev-master"
   },
@@ -203,12 +204,6 @@
       ],
       "web/libraries/{$name}": [
         "type:drupal-library"
-      ],
-      "web/modules/custom/{$name}": [
-        "type:drupal-custom-module"
-      ],
-      "web/themes/custom/{$name}": [
-        "type:drupal-custom-theme"
       ]
     },
     "drupal-scaffold": {

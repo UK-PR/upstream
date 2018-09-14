@@ -36,6 +36,7 @@ content:
       headline_group_tag: h1
       headline_group_class: headline-group
       headline_group_bem: '1'
+      headline_group_anchor: false
     third_party_settings: {  }
     type: headline_default
     region: content
@@ -44,7 +45,7 @@ content:
     weight: 3
     label: hidden
     settings:
-      view_mode: half_width
+      view_mode: 4x3
       link: false
     third_party_settings: {  }
     region: content
