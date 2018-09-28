@@ -34,10 +34,10 @@ content:
     weight: 1
     region: content
     settings:
-      size: 60
+      size: 12
       placeholder: ''
     third_party_settings:
       entity_reference_widget_helpers:
         eck_title_label_override: Statistic
-        eck_title_description_override: 'Number-like phrase (serves as title for this item)'
+        eck_title_description_override: 'Number-like phrase, 12 characters max'
 hidden: {  }
