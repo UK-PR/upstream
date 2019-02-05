@@ -1,0 +1,10 @@
+uuid: 3fcde70d-40cb-4e41-a356-347a83395263
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.contact_info
+label: 'Contact Info'
+targetEntityType: node
+cache: true
