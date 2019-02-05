@@ -1,5 +1,5 @@
 COMMIT_MESSAGE=BUILD: $(shell git log -1 --pretty=%B | cat | tr -d "\'")
-REMOTE_REPO=git@github.com:uk-d8/upstream.git
+REMOTE_REPO=git@gitlab.com:newcity/uk-d8-upstream-artifact.git
 BUILD_REPO=/tmp/upstream
 
 init:

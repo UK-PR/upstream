@@ -10,7 +10,7 @@ build:
   stage: build
   script:
     - eval $(ssh-agent -s)
-    - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
+    - ssh-add <(echo "$GITLAB_BUILD_KEY")
     - make install
     - make clone
     - make replay
@@ -36,7 +36,7 @@ push:master:
   stage: deploy
   script:
     - eval $(ssh-agent -s)
-    - ssh-add <(echo "$GITHUB_UPSTREAM_PRIVATE_KEY")
+    - ssh-add <(echo "$GITLAB_BUILD_KEY")
     - make push
   only:
     - master
